@@ -2,6 +2,8 @@
 
 A simple gain control plugin with a real-time peak meter, built using modern C++ and JUCE. 
 
+**Work in Progress:** This project is actively being developed as part of my audio developer portfolio. Core architecture is complete — feature development and polish are ongoing.
+
 ## 🧠 Project Goals
 
 - Real-time gain adjustment (linear or dB scale)
