@@ -37,9 +37,9 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump")
 endif()
 
-set(CMAKE_BINARY_DIR "/Users/divijsingh/repos/ethyr-gainmeter-plugin/build")
+set(CMAKE_BINARY_DIR "/Users/divijsingh/repos/gainmeter-plugin/build")
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin/JUCE-8.0.8" TYPE PROGRAM FILES "/Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE/tools/extras/Build/juceaide/juceaide_artefacts/Custom/juceaide")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin/JUCE-8.0.8" TYPE PROGRAM FILES "/Users/divijsingh/repos/gainmeter-plugin/build/JUCE/tools/extras/Build/juceaide/juceaide_artefacts/Custom/juceaide")
 endif()
 

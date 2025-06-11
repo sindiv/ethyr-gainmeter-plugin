@@ -1,0 +1,2206 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		89F1A3D462274B6E80B8BDC9 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5F45C11EA3F84121B0F07DC6 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				DE359624F16E447B8EAFCECF /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		9F72839D953B4C52885E408E /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 13233C50E3404E209D94F512 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				94A71F964B768EC58C8D949F /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				2F02B0B822824974955B1FFC /* PBXTargetDependency */,
+				F15481CCF2634890BDA06286 /* PBXTargetDependency */,
+				365863FE4429465FAD0C6876 /* PBXTargetDependency */,
+				842D9AC9A034467F8A0AEB93 /* PBXTargetDependency */,
+				E7C6197887C64F1F99FCC498 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		CCC55876826746B8AABCCE1B /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FD62A3A9A7E54152BE56953D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				B3933A3205E3EA492E805094 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		E926F0880E6940758B7F96A7 /* GainMeter_All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 948464E7BB51470DAE394710 /* Build configuration list for PBXAggregateTarget "GainMeter_All" */;
+			buildPhases = (
+			);
+			dependencies = (
+				5D624D2D69834D77924F71E2 /* PBXTargetDependency */,
+				006B625515CA41EC9C354BB9 /* PBXTargetDependency */,
+				7A12493A525E4EBCB352D910 /* PBXTargetDependency */,
+			);
+			name = GainMeter_All;
+			productName = GainMeter_All;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		01E84776C935499F9FF72EFB /* /Users/divijsingh/repos/gainmeter-plugin/Source/PluginProcessor.cpp */ = {isa = PBXBuildFile; fileRef = 0CC40499B0EB4581B71D17DC /* /Users/divijsingh/repos/gainmeter-plugin/Source/PluginProcessor.cpp */; };
+		04064FE470FA4EA48B72EB2A /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp */ = {isa = PBXBuildFile; fileRef = 3AF733209F2D4B3B8902F309 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp */; };
+		08D2008DFAFD43D687EBE156 /* /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_VST3/PkgInfo */ = {isa = PBXBuildFile; fileRef = 93D232527FEF4423A23E4EAF /* /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_VST3/PkgInfo */; };
+		0BB44125B55E4BA9A8EE41EF /* /Users/divijsingh/JUCE/modules/juce_audio_basics/juce_audio_basics.mm */ = {isa = PBXBuildFile; fileRef = FDAA956D6932495CA2ECFBD5 /* /Users/divijsingh/JUCE/modules/juce_audio_basics/juce_audio_basics.mm */; };
+		0DA89F608FB94271A1888C91 /* /Users/divijsingh/JUCE/modules/juce_events/juce_events.mm */ = {isa = PBXBuildFile; fileRef = 2A4ACD022DDE4DAFA97916F8 /* /Users/divijsingh/JUCE/modules/juce_events/juce_events.mm */; };
+		0FF130131B5F4B12B933A4A3 /* /Users/divijsingh/repos/gainmeter-plugin/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 3244C65753BA4B2CA27349BA /* /Users/divijsingh/repos/gainmeter-plugin/CMakeLists.txt */; };
+		1471B1D3AF6243F3A652F497 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp */ = {isa = PBXBuildFile; fileRef = 5F72D75040E444609DD75E69 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp */; };
+		149801825E50433998091F57 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.mm */ = {isa = PBXBuildFile; fileRef = 5EA72898EAE34A9D870D7CDD /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.mm */; };
+		17700565658745C1B44F6B0F /* /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_AU/PkgInfo */ = {isa = PBXBuildFile; fileRef = F9F54B76EE904DEB90ECA417 /* /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_AU/PkgInfo */; };
+		1A4500ED328C44D58328A161 /* /Users/divijsingh/repos/gainmeter-plugin/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 91DF6EA229174D6484B31FDA /* /Users/divijsingh/repos/gainmeter-plugin/CMakeLists.txt */; };
+		1FDC1E66159B4BF3929285AC /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/DiscRecording.framework */ = {isa = PBXBuildFile; fileRef = CF8FDBD2AB7C48B7B9B50E0D /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/DiscRecording.framework */; };
+		2361BAE4CC4E43A4A1E9892F /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/IOKit.framework */ = {isa = PBXBuildFile; fileRef = AEFF1ECB9AF04298A4315046 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/IOKit.framework */; };
+		2547C5B72FAD46E6802A413A /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/WebKit.framework */ = {isa = PBXBuildFile; fileRef = F2B1B9ED2FFB48A38EBD4C53 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/WebKit.framework */; };
+		2A13271AE7E44B18B5611294 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Foundation.framework */ = {isa = PBXBuildFile; fileRef = E548C2C2F5694B22857E9A32 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Foundation.framework */; };
+		2F11132D5FD548D78F47DD24 /* /Users/divijsingh/JUCE/modules/juce_audio_utils/juce_audio_utils.mm */ = {isa = PBXBuildFile; fileRef = 317E98CB6C7B4D93B71FAE5E /* /Users/divijsingh/JUCE/modules/juce_audio_utils/juce_audio_utils.mm */; };
+		312B8417B49444BA94CC5EB4 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/CoreMIDI.framework */ = {isa = PBXBuildFile; fileRef = 1F4E583E794E43B38F9BE3EC /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/CoreMIDI.framework */; };
+		360B043791E947529DEABB4D /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.mm */ = {isa = PBXBuildFile; fileRef = E4DC4CA0DEFE442CAEEE3E62 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.mm */; };
+		3F90D81B6A144A4EA31E4472 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/AudioToolbox.framework */ = {isa = PBXBuildFile; fileRef = 4FBB9969023C439DA3F0D07B /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/AudioToolbox.framework */; };
+		4DF9118D63BC4A26B0DBD7FF /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Cocoa.framework */ = {isa = PBXBuildFile; fileRef = B1AE654412CF420FAFCAF956 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Cocoa.framework */; };
+		50B3C113DD364FD986B89407 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/AudioUnit.framework */ = {isa = PBXBuildFile; fileRef = B4EB5C2A64204DE5BF24F1B4 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/AudioUnit.framework */; };
+		51121A236FE04B42BA661CDF /* /Users/divijsingh/repos/gainmeter-plugin/Source/PluginProcessor.h */ = {isa = PBXBuildFile; fileRef = D51CB3E6D6B547FE86120060 /* /Users/divijsingh/repos/gainmeter-plugin/Source/PluginProcessor.h */; };
+		5115BB6F679944E0A582FCF1 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp */ = {isa = PBXBuildFile; fileRef = D234B664B75D4CF2B1550022 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp */; };
+		533ED64BF6AF4B928E569080 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp */ = {isa = PBXBuildFile; fileRef = 080EDE24B22D47A3A0927295 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp */; };
+		59D5029CC16F4A7A97032639 /* /Users/divijsingh/repos/gainmeter-plugin/Source/PluginEditor.cpp */ = {isa = PBXBuildFile; fileRef = E135EE678F124C6CBCCCACCC /* /Users/divijsingh/repos/gainmeter-plugin/Source/PluginEditor.cpp */; };
+		5A7056949BD84349950DD412 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp */ = {isa = PBXBuildFile; fileRef = 33FF3283B9BA48A68F325279 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp */; };
+		60E19D273AB0415D86320F53 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/QuartzCore.framework */ = {isa = PBXBuildFile; fileRef = 58ABCFC7E57647A6882278A6 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/QuartzCore.framework */; };
+		6F63476B16B747908BF968E0 /* /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_VST3/PkgInfo.rule */ = {isa = PBXBuildFile; fileRef = D2806478799C4BAF91AB13B7 /* /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_VST3/PkgInfo.rule */; };
+		7665F2FDA7BB4ED1BEC8BB8A /* /Users/divijsingh/JUCE/modules/juce_core/juce_core_CompilationTime.cpp */ = {isa = PBXBuildFile; fileRef = AC101B24A27D498EA77571D2 /* /Users/divijsingh/JUCE/modules/juce_core/juce_core_CompilationTime.cpp */; };
+		76B11E6A0D3E4B61A3B6B2E6 /* /Users/divijsingh/repos/gainmeter-plugin/Source/PluginEditor.h */ = {isa = PBXBuildFile; fileRef = E5564A4B002145C0ADDB7F30 /* /Users/divijsingh/repos/gainmeter-plugin/Source/PluginEditor.h */; };
+		79151AED4DA7468D8F120872 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.mm */ = {isa = PBXBuildFile; fileRef = 77B897D1D54449B2B7BA5A91 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.mm */; };
+		7953B6F6FF544AB8AE370A7E /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_2.mm */ = {isa = PBXBuildFile; fileRef = DC5AD7515E174488B5193377 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_2.mm */; };
+		7E7A47C5BF09493C8DF1B3D9 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_1.mm */ = {isa = PBXBuildFile; fileRef = 585881DA3DD248369676086A /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_1.mm */; };
+		85BF361E48144FFCB1ADD02A /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/CoreAudioKit.framework */ = {isa = PBXBuildFile; fileRef = 2A8F678E4BD94FDD96C91F4E /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/CoreAudioKit.framework */; };
+		8947A246D6D441C2B7E089C1 /* /Users/divijsingh/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp */ = {isa = PBXBuildFile; fileRef = 916FF4DCF22B41F1B36EC46A /* /Users/divijsingh/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp */; };
+		8BF43ED7E6044BA8962AD8B9 /* /Users/divijsingh/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c */ = {isa = PBXBuildFile; fileRef = 15B9C651D7D54B81AE1BA5CC /* /Users/divijsingh/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c */; };
+		8D9607D8151C4C1698CAD897 /* /Users/divijsingh/repos/gainmeter-plugin/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = EC02340EC9BE4703AEC56E3E /* /Users/divijsingh/repos/gainmeter-plugin/CMakeLists.txt */; };
+		904E3CDBEF444917AA451F2E /* /Users/divijsingh/JUCE/modules/juce_audio_processors/juce_audio_processors.mm */ = {isa = PBXBuildFile; fileRef = 2B5E166B51B94FFABDCF2F55 /* /Users/divijsingh/JUCE/modules/juce_audio_processors/juce_audio_processors.mm */; };
+		94BCA7196E194BD3B3F2880C /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp */ = {isa = PBXBuildFile; fileRef = 36C4E4A223F44AD7B63C3475 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp */; };
+		9ECCAD23E8094B3293A3E482 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.mm */ = {isa = PBXBuildFile; fileRef = C123E675E57641A3BE10F323 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.mm */; };
+		9ECD18E938BA43CD8F8F12C7 /* /Users/divijsingh/JUCE/modules/juce_core/juce_core.mm */ = {isa = PBXBuildFile; fileRef = 4F5A002905694BB39F9DD3CE /* /Users/divijsingh/JUCE/modules/juce_core/juce_core.mm */; };
+		9F0351C4B2724153B2E88A7C /* /Users/divijsingh/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp */ = {isa = PBXBuildFile; fileRef = 2CC29FFCC0F44D1689A70EF8 /* /Users/divijsingh/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp */; };
+		A169B65DB1734C03BE46E893 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/VST3/juce_VST3ManifestHelper.mm */ = {isa = PBXBuildFile; fileRef = 01E270B280F247A7B20BB69B /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/VST3/juce_VST3ManifestHelper.mm */; };
+		A659059805DF4B9B90F5A77B /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.mm */ = {isa = PBXBuildFile; fileRef = 3DF335CAEE074B82834B0D8B /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.mm */; };
+		AA46FAA3350147D18BC0FC48 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.mm */ = {isa = PBXBuildFile; fileRef = 9A93FD1E9F8043349ACBE7B4 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.mm */; };
+		B0252A306308424FAFFA8D94 /* /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_AU/PkgInfo.rule */ = {isa = PBXBuildFile; fileRef = 3F179996A7504D658BAA95D8 /* /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_AU/PkgInfo.rule */; };
+		B395A9745F5745EF8C022A98 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.mm */ = {isa = PBXBuildFile; fileRef = D21E23DFD825426EBBD63F42 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.mm */; };
+		BB06368914744A0DA5642251 /* /Users/divijsingh/JUCE/modules/juce_audio_devices/juce_audio_devices.mm */ = {isa = PBXBuildFile; fileRef = 75C5482A8D97430C9AA2698C /* /Users/divijsingh/JUCE/modules/juce_audio_devices/juce_audio_devices.mm */; };
+		C1CAC52867F2495C8DF13E74 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_1.mm */ = {isa = PBXBuildFile; fileRef = B6874BB7A3384D25A6B2EFD8 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_1.mm */; };
+		D09B645C39C54023991F741C /* /Users/divijsingh/JUCE/modules/juce_gui_extra/juce_gui_extra.mm */ = {isa = PBXBuildFile; fileRef = 05B887BC56364E4C9C25BCBC /* /Users/divijsingh/JUCE/modules/juce_gui_extra/juce_gui_extra.mm */; };
+		D100E7914930425CAEEF2269 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Accelerate.framework */ = {isa = PBXBuildFile; fileRef = 244A3057CC574822814665A7 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Accelerate.framework */; };
+		D89F11D6D52C48308888B4EA /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AUv3.mm */ = {isa = PBXBuildFile; fileRef = 39FD4F0BCD0042FBB38D64F5 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AUv3.mm */; };
+		DFDB575DDAFE48A29896F76D /* /Users/divijsingh/JUCE/modules/juce_graphics/juce_graphics.mm */ = {isa = PBXBuildFile; fileRef = 2638B73439C946289F94C25A /* /Users/divijsingh/JUCE/modules/juce_graphics/juce_graphics.mm */; };
+		E3AD98AC38A649A09A80EEEF /* /Users/divijsingh/JUCE/modules/juce_audio_formats/juce_audio_formats.mm */ = {isa = PBXBuildFile; fileRef = A1F3F354ACE24904A5086F01 /* /Users/divijsingh/JUCE/modules/juce_audio_formats/juce_audio_formats.mm */; };
+		EE54B0E8FD724914AE42E911 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp */ = {isa = PBXBuildFile; fileRef = 562E6A5F90D04ACC9C802DEA /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp */; };
+		EF68758EC68C44118C15E49C /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Security.framework */ = {isa = PBXBuildFile; fileRef = 63CD1D0EEB534FA2BDEFB081 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Security.framework */; };
+		F05F9BCF9FAE4F89A2E4F0A2 /* /Users/divijsingh/repos/gainmeter-plugin/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 5B6A1CF1C847445C8C6D36EB /* /Users/divijsingh/repos/gainmeter-plugin/CMakeLists.txt */; };
+		F0801AF0E24E4D6EB484782B /* /Users/divijsingh/JUCE/modules/juce_data_structures/juce_data_structures.mm */ = {isa = PBXBuildFile; fileRef = 2C345271038D48F98E3E31DF /* /Users/divijsingh/JUCE/modules/juce_data_structures/juce_data_structures.mm */; };
+		F45A08C8D4414F57A751BFC5 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_2.mm */ = {isa = PBXBuildFile; fileRef = 627FEB8E51574F579A25E5B8 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_2.mm */; };
+		F64C66555BA14238A0AD6396 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AUv3.mm */ = {isa = PBXBuildFile; fileRef = 121AD40ED8DD46E287DA85CE /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AUv3.mm */; };
+		F94AE76F71E34ADF869CC505 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/CoreAudio.framework */ = {isa = PBXBuildFile; fileRef = 5A9256D40D2E46B3BAEDA961 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/CoreAudio.framework */; };
+		FA8A1F50D95744C9A7C9C426 /* /Users/divijsingh/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp */ = {isa = PBXBuildFile; fileRef = 91EB17F169F5496BA421BB76 /* /Users/divijsingh/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp */; };
+		FF12151C6AD844FCB0275851 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.mm */ = {isa = PBXBuildFile; fileRef = 9B26D24A9A964C1DA7D7FFA3 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.mm */; };
+		FF1D6847AEDE4529B2384C1E /* /Users/divijsingh/JUCE/modules/juce_gui_basics/juce_gui_basics.mm */ = {isa = PBXBuildFile; fileRef = 4ABEE7A5B90041C3813338A6 /* /Users/divijsingh/JUCE/modules/juce_gui_basics/juce_gui_basics.mm */; };
+		FF50E65A56FB47C285E55F8C /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp */ = {isa = PBXBuildFile; fileRef = 6A5F836B940D4B5BB140888E /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		04DA9D3D16C24408BB47DF89 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		1DD9E51944D2400281AB0A60 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		5E6ADA5655ED4E5D8EE380FD /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		7AD96FC20DDA469695E36502 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		25DC7F45BFE147D6864F390E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858033B8C4124D158137BB9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B159894B3F4BA09BFCA403;
+			remoteInfo = GainMeter_VST3;
+		};
+		4FB008CE76BC4384870C6227 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858033B8C4124D158137BB9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79F6B3BCDBBF4E00B22B9C5E;
+			remoteInfo = GainMeter;
+		};
+		576B27A365F34589A8DC4A7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858033B8C4124D158137BB9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCC55876826746B8AABCCE1B;
+			remoteInfo = ZERO_CHECK;
+		};
+		7BA6A5D0DC6D4A819FF29705 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858033B8C4124D158137BB9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCC55876826746B8AABCCE1B;
+			remoteInfo = ZERO_CHECK;
+		};
+		8732211922244E0FBEB6517B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858033B8C4124D158137BB9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCC55876826746B8AABCCE1B;
+			remoteInfo = ZERO_CHECK;
+		};
+		8855AB8022974436AAB73F0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858033B8C4124D158137BB9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72D34305AA324453989ACE08;
+			remoteInfo = GainMeter_AU;
+		};
+		9DABE0D8C34E4B7898A246A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858033B8C4124D158137BB9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B159894B3F4BA09BFCA403;
+			remoteInfo = GainMeter_VST3;
+		};
+		A9E3BEF01D5749D2A2B94FDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858033B8C4124D158137BB9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCC55876826746B8AABCCE1B;
+			remoteInfo = ZERO_CHECK;
+		};
+		B13C547BFCA845548F6FA66E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858033B8C4124D158137BB9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72D34305AA324453989ACE08;
+			remoteInfo = GainMeter_AU;
+		};
+		BCAE1FDC361A40C4A6B3B8A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858033B8C4124D158137BB9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79F6B3BCDBBF4E00B22B9C5E;
+			remoteInfo = GainMeter;
+		};
+		CEC2F70D88304DC9A6067C85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858033B8C4124D158137BB9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCC55876826746B8AABCCE1B;
+			remoteInfo = ZERO_CHECK;
+		};
+		D8AF429E205943D0B5C5D257 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858033B8C4124D158137BB9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79F6B3BCDBBF4E00B22B9C5E;
+			remoteInfo = GainMeter;
+		};
+		E08E90385EA24E1EA6992C03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858033B8C4124D158137BB9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8734E87743504D6BB6F80AAF;
+			remoteInfo = juce_vst3_helper;
+		};
+		E24F94914BA841E6A44040C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858033B8C4124D158137BB9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCC55876826746B8AABCCE1B;
+			remoteInfo = ZERO_CHECK;
+		};
+		E81E71E8928648F4A8CA5C57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858033B8C4124D158137BB9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8734E87743504D6BB6F80AAF;
+			remoteInfo = juce_vst3_helper;
+		};
+		E95EF85D8BA44324976C5B09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858033B8C4124D158137BB9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F72839D953B4C52885E408E;
+			remoteInfo = ALL_BUILD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01E270B280F247A7B20BB69B /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/VST3/juce_VST3ManifestHelper.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_VST3ManifestHelper.mm; path = /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/VST3/juce_VST3ManifestHelper.mm; sourceTree = "<absolute>"; };
+		05B887BC56364E4C9C25BCBC /* /Users/divijsingh/JUCE/modules/juce_gui_extra/juce_gui_extra.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_gui_extra.mm; path = /Users/divijsingh/JUCE/modules/juce_gui_extra/juce_gui_extra.mm; sourceTree = "<absolute>"; };
+		080EDE24B22D47A3A0927295 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = juce_audio_plugin_client_Unity.cpp; path = /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp; sourceTree = "<absolute>"; };
+		0CC40499B0EB4581B71D17DC /* /Users/divijsingh/repos/gainmeter-plugin/Source/PluginProcessor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PluginProcessor.cpp; path = Source/PluginProcessor.cpp; sourceTree = SOURCE_ROOT; };
+		121AD40ED8DD46E287DA85CE /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AUv3.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_plugin_client_AUv3.mm; path = /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AUv3.mm; sourceTree = "<absolute>"; };
+		15B9C651D7D54B81AE1BA5CC /* /Users/divijsingh/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = juce_graphics_Sheenbidi.c; path = /Users/divijsingh/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c; sourceTree = "<absolute>"; };
+		1F4E583E794E43B38F9BE3EC /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/CoreMIDI.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/CoreMIDI.framework; sourceTree = "<absolute>"; };
+		244A3057CC574822814665A7 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Accelerate.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
+		2638B73439C946289F94C25A /* /Users/divijsingh/JUCE/modules/juce_graphics/juce_graphics.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_graphics.mm; path = /Users/divijsingh/JUCE/modules/juce_graphics/juce_graphics.mm; sourceTree = "<absolute>"; };
+		2A4ACD022DDE4DAFA97916F8 /* /Users/divijsingh/JUCE/modules/juce_events/juce_events.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_events.mm; path = /Users/divijsingh/JUCE/modules/juce_events/juce_events.mm; sourceTree = "<absolute>"; };
+		2A8F678E4BD94FDD96C91F4E /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/CoreAudioKit.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/CoreAudioKit.framework; sourceTree = "<absolute>"; };
+		2B5E166B51B94FFABDCF2F55 /* /Users/divijsingh/JUCE/modules/juce_audio_processors/juce_audio_processors.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_processors.mm; path = /Users/divijsingh/JUCE/modules/juce_audio_processors/juce_audio_processors.mm; sourceTree = "<absolute>"; };
+		2C345271038D48F98E3E31DF /* /Users/divijsingh/JUCE/modules/juce_data_structures/juce_data_structures.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_data_structures.mm; path = /Users/divijsingh/JUCE/modules/juce_data_structures/juce_data_structures.mm; sourceTree = "<absolute>"; };
+		2CC29FFCC0F44D1689A70EF8 /* /Users/divijsingh/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = juce_audio_processors_ara.cpp; path = /Users/divijsingh/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp; sourceTree = "<absolute>"; };
+		317E98CB6C7B4D93B71FAE5E /* /Users/divijsingh/JUCE/modules/juce_audio_utils/juce_audio_utils.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_utils.mm; path = /Users/divijsingh/JUCE/modules/juce_audio_utils/juce_audio_utils.mm; sourceTree = "<absolute>"; };
+		3244C65753BA4B2CA27349BA /* /Users/divijsingh/repos/gainmeter-plugin/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		33FF3283B9BA48A68F325279 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = juce_audio_plugin_client_Standalone.cpp; path = /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp; sourceTree = "<absolute>"; };
+		361B971C3B5A46E1A70294B6 /* GainMeter */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libGainMeter_SharedCode.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		36C4E4A223F44AD7B63C3475 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = juce_audio_plugin_client_Unity.cpp; path = /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp; sourceTree = "<absolute>"; };
+		39FD4F0BCD0042FBB38D64F5 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AUv3.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_plugin_client_AUv3.mm; path = /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AUv3.mm; sourceTree = "<absolute>"; };
+		3AF733209F2D4B3B8902F309 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = juce_audio_plugin_client_ARA.cpp; path = /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp; sourceTree = "<absolute>"; };
+		3DF335CAEE074B82834B0D8B /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_plugin_client_VST3.mm; path = /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.mm; sourceTree = "<absolute>"; };
+		3F179996A7504D658BAA95D8 /* /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_AU/PkgInfo.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = PkgInfo.rule; path = build/GainMeter_artefacts/JuceLibraryCode/GainMeter_AU/PkgInfo.rule; sourceTree = SOURCE_ROOT; };
+		4ABEE7A5B90041C3813338A6 /* /Users/divijsingh/JUCE/modules/juce_gui_basics/juce_gui_basics.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_gui_basics.mm; path = /Users/divijsingh/JUCE/modules/juce_gui_basics/juce_gui_basics.mm; sourceTree = "<absolute>"; };
+		4F5A002905694BB39F9DD3CE /* /Users/divijsingh/JUCE/modules/juce_core/juce_core.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_core.mm; path = /Users/divijsingh/JUCE/modules/juce_core/juce_core.mm; sourceTree = "<absolute>"; };
+		4FBB9969023C439DA3F0D07B /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/AudioToolbox.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
+		562E6A5F90D04ACC9C802DEA /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = juce_audio_plugin_client_AAX_utils.cpp; path = /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp; sourceTree = "<absolute>"; };
+		585881DA3DD248369676086A /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_1.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_plugin_client_AU_1.mm; path = /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_1.mm; sourceTree = "<absolute>"; };
+		588E8D2D7E6B4B63B3AB9506 /* GainMeter_VST3 */ = {isa = PBXFileReference; explicitFileType = "wrapper.plug-in"; path = GainMeter.vst3/Contents/MacOS/GainMeter; sourceTree = BUILT_PRODUCTS_DIR; };
+		58ABCFC7E57647A6882278A6 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/QuartzCore.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		5A9256D40D2E46B3BAEDA961 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/CoreAudio.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = "<absolute>"; };
+		5B6A1CF1C847445C8C6D36EB /* /Users/divijsingh/repos/gainmeter-plugin/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5EA72898EAE34A9D870D7CDD /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_plugin_client_AAX.mm; path = /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.mm; sourceTree = "<absolute>"; };
+		5F72D75040E444609DD75E69 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = juce_audio_plugin_client_ARA.cpp; path = /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp; sourceTree = "<absolute>"; };
+		627FEB8E51574F579A25E5B8 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_2.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_plugin_client_AU_2.mm; path = /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_2.mm; sourceTree = "<absolute>"; };
+		63CD1D0EEB534FA2BDEFB081 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Security.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Security.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		6A5F836B940D4B5BB140888E /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = juce_audio_plugin_client_Standalone.cpp; path = /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp; sourceTree = "<absolute>"; };
+		6B773E123CD042878FDCA2F5 /* juce_vst3_helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = juce_vst3_helper; sourceTree = BUILT_PRODUCTS_DIR; };
+		75C5482A8D97430C9AA2698C /* /Users/divijsingh/JUCE/modules/juce_audio_devices/juce_audio_devices.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_devices.mm; path = /Users/divijsingh/JUCE/modules/juce_audio_devices/juce_audio_devices.mm; sourceTree = "<absolute>"; };
+		77B897D1D54449B2B7BA5A91 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_plugin_client_VST2.mm; path = /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.mm; sourceTree = "<absolute>"; };
+		916FF4DCF22B41F1B36EC46A /* /Users/divijsingh/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = juce_audio_processors_lv2_libs.cpp; path = /Users/divijsingh/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp; sourceTree = "<absolute>"; };
+		91DF6EA229174D6484B31FDA /* /Users/divijsingh/repos/gainmeter-plugin/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		91EB17F169F5496BA421BB76 /* /Users/divijsingh/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = juce_graphics_Harfbuzz.cpp; path = /Users/divijsingh/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp; sourceTree = "<absolute>"; };
+		93D232527FEF4423A23E4EAF /* /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_VST3/PkgInfo */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = PkgInfo; path = build/GainMeter_artefacts/JuceLibraryCode/GainMeter_VST3/PkgInfo; sourceTree = SOURCE_ROOT; };
+		963C290B32844D5D884AC9EE /* /Users/divijsingh/repos/gainmeter-plugin/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9A93FD1E9F8043349ACBE7B4 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_plugin_client_LV2.mm; path = /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.mm; sourceTree = "<absolute>"; };
+		9B26D24A9A964C1DA7D7FFA3 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_plugin_client_LV2.mm; path = /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.mm; sourceTree = "<absolute>"; };
+		A1F3F354ACE24904A5086F01 /* /Users/divijsingh/JUCE/modules/juce_audio_formats/juce_audio_formats.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_formats.mm; path = /Users/divijsingh/JUCE/modules/juce_audio_formats/juce_audio_formats.mm; sourceTree = "<absolute>"; };
+		AC101B24A27D498EA77571D2 /* /Users/divijsingh/JUCE/modules/juce_core/juce_core_CompilationTime.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = juce_core_CompilationTime.cpp; path = /Users/divijsingh/JUCE/modules/juce_core/juce_core_CompilationTime.cpp; sourceTree = "<absolute>"; };
+		AEFF1ECB9AF04298A4315046 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/IOKit.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		B1AE654412CF420FAFCAF956 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Cocoa.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		B4EB5C2A64204DE5BF24F1B4 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/AudioUnit.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/AudioUnit.framework; sourceTree = "<absolute>"; };
+		B6874BB7A3384D25A6B2EFD8 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_1.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_plugin_client_AU_1.mm; path = /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_1.mm; sourceTree = "<absolute>"; };
+		C123E675E57641A3BE10F323 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_plugin_client_VST3.mm; path = /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.mm; sourceTree = "<absolute>"; };
+		CF8FDBD2AB7C48B7B9B50E0D /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/DiscRecording.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = DiscRecording.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/DiscRecording.framework; sourceTree = "<absolute>"; };
+		D21E23DFD825426EBBD63F42 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_plugin_client_AAX.mm; path = /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.mm; sourceTree = "<absolute>"; };
+		D234B664B75D4CF2B1550022 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = juce_audio_plugin_client_AAX_utils.cpp; path = /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp; sourceTree = "<absolute>"; };
+		D2806478799C4BAF91AB13B7 /* /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_VST3/PkgInfo.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = PkgInfo.rule; path = build/GainMeter_artefacts/JuceLibraryCode/GainMeter_VST3/PkgInfo.rule; sourceTree = SOURCE_ROOT; };
+		D51CB3E6D6B547FE86120060 /* /Users/divijsingh/repos/gainmeter-plugin/Source/PluginProcessor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PluginProcessor.h; path = Source/PluginProcessor.h; sourceTree = SOURCE_ROOT; };
+		DC5AD7515E174488B5193377 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_2.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_plugin_client_AU_2.mm; path = /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_2.mm; sourceTree = "<absolute>"; };
+		E0D6992563CD40C79BDEF9CB /* /Users/divijsingh/repos/gainmeter-plugin/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E135EE678F124C6CBCCCACCC /* /Users/divijsingh/repos/gainmeter-plugin/Source/PluginEditor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PluginEditor.cpp; path = Source/PluginEditor.cpp; sourceTree = SOURCE_ROOT; };
+		E4DC4CA0DEFE442CAEEE3E62 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_plugin_client_VST2.mm; path = /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.mm; sourceTree = "<absolute>"; };
+		E548C2C2F5694B22857E9A32 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Foundation.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		E5564A4B002145C0ADDB7F30 /* /Users/divijsingh/repos/gainmeter-plugin/Source/PluginEditor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PluginEditor.h; path = Source/PluginEditor.h; sourceTree = SOURCE_ROOT; };
+		EC02340EC9BE4703AEC56E3E /* /Users/divijsingh/repos/gainmeter-plugin/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F2B1B9ED2FFB48A38EBD4C53 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/WebKit.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
+		F54F5047184A448C91BA5E38 /* GainMeter_AU */ = {isa = PBXFileReference; explicitFileType = "wrapper.plug-in"; path = GainMeter.component/Contents/MacOS/GainMeter; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9F54B76EE904DEB90ECA417 /* /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_AU/PkgInfo */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = PkgInfo; path = build/GainMeter_artefacts/JuceLibraryCode/GainMeter_AU/PkgInfo; sourceTree = SOURCE_ROOT; };
+		FDAA956D6932495CA2ECFBD5 /* /Users/divijsingh/JUCE/modules/juce_audio_basics/juce_audio_basics.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_basics.mm; path = /Users/divijsingh/JUCE/modules/juce_audio_basics/juce_audio_basics.mm; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15792CD1E9C24BBE8F87A2CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31D5E0BF6AA547DDA2A1491E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EE64E6FE33248CC86B08383 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F21DD3DA22A8496DB778FD68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02CD642EC75043B38F96B01B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				361B971C3B5A46E1A70294B6 /* GainMeter */,
+				F54F5047184A448C91BA5E38 /* GainMeter_AU */,
+				588E8D2D7E6B4B63B3AB9506 /* GainMeter_VST3 */,
+				6B773E123CD042878FDCA2F5 /* juce_vst3_helper */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0DFC71B0F83B4036A35F76AD /* GainMeter */ = {
+			isa = PBXGroup;
+			children = (
+				B0A2432F3D594E3797B4DBEA /* GainMeter */,
+				217DB820932C4EB3A3C3C06D /* GainMeter_All */,
+				640B68B2344542C89B8E5126 /* GainMeter_AU */,
+				A633EA0D5BCB4C31BC9A91FA /* GainMeter_VST3 */,
+			);
+			name = GainMeter;
+			sourceTree = "<group>";
+		};
+		0E501DDBC94945A7AA930148 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2B1B9ED2FFB48A38EBD4C53 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/WebKit.framework */,
+				CF8FDBD2AB7C48B7B9B50E0D /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/DiscRecording.framework */,
+				58ABCFC7E57647A6882278A6 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/QuartzCore.framework */,
+				5A9256D40D2E46B3BAEDA961 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/CoreAudio.framework */,
+				1F4E583E794E43B38F9BE3EC /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/CoreMIDI.framework */,
+				4FBB9969023C439DA3F0D07B /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/AudioToolbox.framework */,
+				244A3057CC574822814665A7 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Accelerate.framework */,
+				B1AE654412CF420FAFCAF956 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Cocoa.framework */,
+				E548C2C2F5694B22857E9A32 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Foundation.framework */,
+				AEFF1ECB9AF04298A4315046 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/IOKit.framework */,
+				63CD1D0EEB534FA2BDEFB081 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Security.framework */,
+				B4EB5C2A64204DE5BF24F1B4 /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/AudioUnit.framework */,
+				2A8F678E4BD94FDD96C91F4E /* /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/CoreAudioKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		217DB820932C4EB3A3C3C06D /* GainMeter_All */ = {
+			isa = PBXGroup;
+			children = (
+				E0D6992563CD40C79BDEF9CB /* /Users/divijsingh/repos/gainmeter-plugin/CMakeLists.txt */,
+			);
+			name = GainMeter_All;
+			sourceTree = "<group>";
+		};
+		2E79DF1C292C461B9106CB98 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+				3F179996A7504D658BAA95D8 /* /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_AU/PkgInfo.rule */,
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		35FD8308DBDC4E4FBF013A98 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				BB6A5E52B55B4E9A960735B7 /* CMake Rules */,
+				963C290B32844D5D884AC9EE /* /Users/divijsingh/repos/gainmeter-plugin/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		4A70291671FE4236962AA585 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5564A4B002145C0ADDB7F30 /* /Users/divijsingh/repos/gainmeter-plugin/Source/PluginEditor.h */,
+				D51CB3E6D6B547FE86120060 /* /Users/divijsingh/repos/gainmeter-plugin/Source/PluginProcessor.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		5871261ACA8A4561B7175B62 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+				D2806478799C4BAF91AB13B7 /* /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_VST3/PkgInfo.rule */,
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		5E16B040133F4235BF10F8CC /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				01E270B280F247A7B20BB69B /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/VST3/juce_VST3ManifestHelper.mm */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		640B68B2344542C89B8E5126 /* GainMeter_AU */ = {
+			isa = PBXGroup;
+			children = (
+				2E79DF1C292C461B9106CB98 /* CMake Rules */,
+				A4CEB9653F2C4C72BC5A659A /* Source Files */,
+				91DF6EA229174D6484B31FDA /* /Users/divijsingh/repos/gainmeter-plugin/CMakeLists.txt */,
+				F9F54B76EE904DEB90ECA417 /* /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_AU/PkgInfo */,
+			);
+			name = GainMeter_AU;
+			sourceTree = "<group>";
+		};
+		909B2740495546109BD51437 /* juce_vst3_helper */ = {
+			isa = PBXGroup;
+			children = (
+				5E16B040133F4235BF10F8CC /* Source Files */,
+				EC02340EC9BE4703AEC56E3E /* /Users/divijsingh/repos/gainmeter-plugin/CMakeLists.txt */,
+			);
+			name = juce_vst3_helper;
+			sourceTree = "<group>";
+		};
+		94064E42FAC54E9F820FD32E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				D21E23DFD825426EBBD63F42 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.mm */,
+				562E6A5F90D04ACC9C802DEA /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp */,
+				3AF733209F2D4B3B8902F309 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp */,
+				B6874BB7A3384D25A6B2EFD8 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_1.mm */,
+				627FEB8E51574F579A25E5B8 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_2.mm */,
+				121AD40ED8DD46E287DA85CE /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AUv3.mm */,
+				9B26D24A9A964C1DA7D7FFA3 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.mm */,
+				6A5F836B940D4B5BB140888E /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp */,
+				36C4E4A223F44AD7B63C3475 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp */,
+				E4DC4CA0DEFE442CAEEE3E62 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.mm */,
+				3DF335CAEE074B82834B0D8B /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.mm */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		A4CEB9653F2C4C72BC5A659A /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				5EA72898EAE34A9D870D7CDD /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.mm */,
+				D234B664B75D4CF2B1550022 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp */,
+				5F72D75040E444609DD75E69 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp */,
+				585881DA3DD248369676086A /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_1.mm */,
+				DC5AD7515E174488B5193377 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_2.mm */,
+				39FD4F0BCD0042FBB38D64F5 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AUv3.mm */,
+				9A93FD1E9F8043349ACBE7B4 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.mm */,
+				33FF3283B9BA48A68F325279 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp */,
+				080EDE24B22D47A3A0927295 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp */,
+				77B897D1D54449B2B7BA5A91 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.mm */,
+				C123E675E57641A3BE10F323 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.mm */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		A633EA0D5BCB4C31BC9A91FA /* GainMeter_VST3 */ = {
+			isa = PBXGroup;
+			children = (
+				5871261ACA8A4561B7175B62 /* CMake Rules */,
+				94064E42FAC54E9F820FD32E /* Source Files */,
+				3244C65753BA4B2CA27349BA /* /Users/divijsingh/repos/gainmeter-plugin/CMakeLists.txt */,
+				93D232527FEF4423A23E4EAF /* /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_VST3/PkgInfo */,
+			);
+			name = GainMeter_VST3;
+			sourceTree = "<group>";
+		};
+		B0A2432F3D594E3797B4DBEA /* GainMeter */ = {
+			isa = PBXGroup;
+			children = (
+				C4E80F46820A4BF5A8D8FF1A /* Source Files */,
+				4A70291671FE4236962AA585 /* Header Files */,
+				5B6A1CF1C847445C8C6D36EB /* /Users/divijsingh/repos/gainmeter-plugin/CMakeLists.txt */,
+			);
+			name = GainMeter;
+			sourceTree = "<group>";
+		};
+		BB6A5E52B55B4E9A960735B7 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		C4E80F46820A4BF5A8D8FF1A /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDAA956D6932495CA2ECFBD5 /* /Users/divijsingh/JUCE/modules/juce_audio_basics/juce_audio_basics.mm */,
+				75C5482A8D97430C9AA2698C /* /Users/divijsingh/JUCE/modules/juce_audio_devices/juce_audio_devices.mm */,
+				A1F3F354ACE24904A5086F01 /* /Users/divijsingh/JUCE/modules/juce_audio_formats/juce_audio_formats.mm */,
+				2B5E166B51B94FFABDCF2F55 /* /Users/divijsingh/JUCE/modules/juce_audio_processors/juce_audio_processors.mm */,
+				2CC29FFCC0F44D1689A70EF8 /* /Users/divijsingh/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp */,
+				916FF4DCF22B41F1B36EC46A /* /Users/divijsingh/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp */,
+				317E98CB6C7B4D93B71FAE5E /* /Users/divijsingh/JUCE/modules/juce_audio_utils/juce_audio_utils.mm */,
+				4F5A002905694BB39F9DD3CE /* /Users/divijsingh/JUCE/modules/juce_core/juce_core.mm */,
+				AC101B24A27D498EA77571D2 /* /Users/divijsingh/JUCE/modules/juce_core/juce_core_CompilationTime.cpp */,
+				2C345271038D48F98E3E31DF /* /Users/divijsingh/JUCE/modules/juce_data_structures/juce_data_structures.mm */,
+				2A4ACD022DDE4DAFA97916F8 /* /Users/divijsingh/JUCE/modules/juce_events/juce_events.mm */,
+				2638B73439C946289F94C25A /* /Users/divijsingh/JUCE/modules/juce_graphics/juce_graphics.mm */,
+				91EB17F169F5496BA421BB76 /* /Users/divijsingh/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp */,
+				15B9C651D7D54B81AE1BA5CC /* /Users/divijsingh/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c */,
+				4ABEE7A5B90041C3813338A6 /* /Users/divijsingh/JUCE/modules/juce_gui_basics/juce_gui_basics.mm */,
+				05B887BC56364E4C9C25BCBC /* /Users/divijsingh/JUCE/modules/juce_gui_extra/juce_gui_extra.mm */,
+				E135EE678F124C6CBCCCACCC /* /Users/divijsingh/repos/gainmeter-plugin/Source/PluginEditor.cpp */,
+				0CC40499B0EB4581B71D17DC /* /Users/divijsingh/repos/gainmeter-plugin/Source/PluginProcessor.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		EE1048BFB70F48DBB2C2B530 = {
+			isa = PBXGroup;
+			children = (
+				0DFC71B0F83B4036A35F76AD /* GainMeter */,
+				909B2740495546109BD51437 /* juce_vst3_helper */,
+				35FD8308DBDC4E4FBF013A98 /* ALL_BUILD */,
+				02CD642EC75043B38F96B01B /* Products */,
+				0E501DDBC94945A7AA930148 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52B159894B3F4BA09BFCA403 /* GainMeter_VST3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 492A1811B32A40BC9C7C316B /* Build configuration list for PBXNativeTarget "GainMeter_VST3" */;
+			buildPhases = (
+				C5D0AE460251563B4FA8C327 /* Generate GainMeter_artefacts/JuceLibraryCode/GainMeter_VST3/PkgInfo */,
+				E10E5FD5C9834DEDB16430DE /* Sources */,
+				F21DD3DA22A8496DB778FD68 /* Frameworks */,
+				8C706DD0D73CCB55EDACE19C /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45EC51FF624B4B9C878FF2D2 /* PBXTargetDependency */,
+				59210287FD644D49B2941CF3 /* PBXTargetDependency */,
+				B8753FFB06664499BDE1FCDD /* PBXTargetDependency */,
+			);
+			name = GainMeter_VST3;
+			productName = GainMeter_VST3;
+			productReference = 588E8D2D7E6B4B63B3AB9506 /* GainMeter_VST3 */;
+			productType = "com.apple.product-type.bundle";
+		};
+		72D34305AA324453989ACE08 /* GainMeter_AU */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF606C5F401640B2A783A690 /* Build configuration list for PBXNativeTarget "GainMeter_AU" */;
+			buildPhases = (
+				5558C76CD72C8E6D41A6DEA2 /* Generate GainMeter_artefacts/JuceLibraryCode/GainMeter_AU/PkgInfo */,
+				E469B087B5D9419898B391F5 /* Sources */,
+				31D5E0BF6AA547DDA2A1491E /* Frameworks */,
+				4018CAE1DCF34577C53C885E /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1AF0F05E54F418B8899E6BC /* PBXTargetDependency */,
+				56913091CC034B8A8323CE5D /* PBXTargetDependency */,
+			);
+			name = GainMeter_AU;
+			productName = GainMeter_AU;
+			productReference = F54F5047184A448C91BA5E38 /* GainMeter_AU */;
+			productType = "com.apple.product-type.bundle";
+		};
+		79F6B3BCDBBF4E00B22B9C5E /* GainMeter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DEC25B14C244952A2A72312 /* Build configuration list for PBXNativeTarget "GainMeter" */;
+			buildPhases = (
+				7AE37032D0D44ED5B27115EC /* Sources */,
+				15792CD1E9C24BBE8F87A2CA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17893A3D49B5451991E04DB9 /* PBXTargetDependency */,
+			);
+			name = GainMeter;
+			productName = GainMeter;
+			productReference = 361B971C3B5A46E1A70294B6 /* GainMeter */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8734E87743504D6BB6F80AAF /* juce_vst3_helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8E2CDF2B2714958AD14AD85 /* Build configuration list for PBXNativeTarget "juce_vst3_helper" */;
+			buildPhases = (
+				B58280F2FC1A45B79B922F7E /* Sources */,
+				6EE64E6FE33248CC86B08383 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A301ADDD84F84CFDAC177497 /* PBXTargetDependency */,
+			);
+			name = juce_vst3_helper;
+			productName = juce_vst3_helper;
+			productReference = 6B773E123CD042878FDCA2F5 /* juce_vst3_helper */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		858033B8C4124D158137BB9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1520;
+			};
+			buildConfigurationList = CF603C4EB3AA46D0A6AEF455 /* Build configuration list for PBXProject "GainMeterPlugin" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				1DD9E51944D2400281AB0A60 /* Debug */,
+				7AD96FC20DDA469695E36502 /* Release */,
+				04DA9D3D16C24408BB47DF89 /* MinSizeRel */,
+				5E6ADA5655ED4E5D8EE380FD /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = EE1048BFB70F48DBB2C2B530;
+			projectDirPath = "/Users/divijsingh/repos/gainmeter-plugin";
+			projectRoot = "";
+			targets = (
+				9F72839D953B4C52885E408E /* ALL_BUILD */,
+				79F6B3BCDBBF4E00B22B9C5E /* GainMeter */,
+				72D34305AA324453989ACE08 /* GainMeter_AU */,
+				E926F0880E6940758B7F96A7 /* GainMeter_All */,
+				52B159894B3F4BA09BFCA403 /* GainMeter_VST3 */,
+				CCC55876826746B8AABCCE1B /* ZERO_CHECK */,
+				89F1A3D462274B6E80B8BDC9 /* install */,
+				8734E87743504D6BB6F80AAF /* juce_vst3_helper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BDE87007F5F85886D910616 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		4018CAE1DCF34577C53C885E /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -E copy /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_AU/PkgInfo /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Debug/AU/GainMeter.component/Contents
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -Dsrc=/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Debug/AU/GainMeter.component -P /Users/divijsingh/JUCE/extras/Build/CMake/checkBundleSigning.cmake
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -Dsrc=/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Debug/AU/GainMeter.component -Ddest=/Users/divijsingh/Library/Audio/Plug-Ins/Components -P /Users/divijsingh/JUCE/extras/Build/CMake/copyDir.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -E copy /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_AU/PkgInfo /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Release/AU/GainMeter.component/Contents
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -Dsrc=/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Release/AU/GainMeter.component -P /Users/divijsingh/JUCE/extras/Build/CMake/checkBundleSigning.cmake
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -Dsrc=/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Release/AU/GainMeter.component -Ddest=/Users/divijsingh/Library/Audio/Plug-Ins/Components -P /Users/divijsingh/JUCE/extras/Build/CMake/copyDir.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -E copy /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_AU/PkgInfo /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/MinSizeRel/AU/GainMeter.component/Contents
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -Dsrc=/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/MinSizeRel/AU/GainMeter.component -P /Users/divijsingh/JUCE/extras/Build/CMake/checkBundleSigning.cmake
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -Dsrc=/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/MinSizeRel/AU/GainMeter.component -Ddest=/Users/divijsingh/Library/Audio/Plug-Ins/Components -P /Users/divijsingh/JUCE/extras/Build/CMake/copyDir.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -E copy /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_AU/PkgInfo /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/RelWithDebInfo/AU/GainMeter.component/Contents
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -Dsrc=/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/RelWithDebInfo/AU/GainMeter.component -P /Users/divijsingh/JUCE/extras/Build/CMake/checkBundleSigning.cmake
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -Dsrc=/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/RelWithDebInfo/AU/GainMeter.component -Ddest=/Users/divijsingh/Library/Audio/Plug-Ins/Components -P /Users/divijsingh/JUCE/extras/Build/CMake/copyDir.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		5558C76CD72C8E6D41A6DEA2 /* Generate GainMeter_artefacts/JuceLibraryCode/GainMeter_AU/PkgInfo */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate GainMeter_artefacts/JuceLibraryCode/GainMeter_AU/PkgInfo";
+			outputPaths = (
+"/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_AU/PkgInfo"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Users/divijsingh/repos/gainmeter-plugin/build/JUCE/tools/extras/Build/juceaide/juceaide_artefacts/Custom/juceaide pkginfo AU /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_AU/PkgInfo
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Users/divijsingh/repos/gainmeter-plugin/build/JUCE/tools/extras/Build/juceaide/juceaide_artefacts/Custom/juceaide pkginfo AU /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_AU/PkgInfo
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Users/divijsingh/repos/gainmeter-plugin/build/JUCE/tools/extras/Build/juceaide/juceaide_artefacts/Custom/juceaide pkginfo AU /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_AU/PkgInfo
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Users/divijsingh/repos/gainmeter-plugin/build/JUCE/tools/extras/Build/juceaide/juceaide_artefacts/Custom/juceaide pkginfo AU /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_AU/PkgInfo
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		8C706DD0D73CCB55EDACE19C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -E copy /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_VST3/PkgInfo /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Debug/VST3/GainMeter.vst3/Contents
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -Dsrc=/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Debug/VST3/GainMeter.vst3 -P /Users/divijsingh/JUCE/extras/Build/CMake/checkBundleSigning.cmake
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -E echo removing\\ moduleinfo.json
+  /Applications/CMake.app/Contents/bin/cmake -E remove -f /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Debug/VST3/GainMeter.vst3/Contents/moduleinfo.json /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Debug/VST3/GainMeter.vst3/Contents/Resources/moduleinfo.json
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -E echo \"creating /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Debug/VST3/GainMeter.vst3/Contents/Resources/moduleinfo.json\"
+  /Applications/CMake.app/Contents/bin/cmake -E make_directory /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Debug/VST3/GainMeter.vst3/Contents/Resources
+  /Users/divijsingh/repos/gainmeter-plugin/build/Debug/juce_vst3_helper -create -version 0.1.0 -path /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Debug/VST3/GainMeter.vst3 -output /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Debug/VST3/GainMeter.vst3/Contents/Resources/moduleinfo.json
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -Dsrc=/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Debug/VST3/GainMeter.vst3 -P /Users/divijsingh/JUCE/extras/Build/CMake/checkBundleSigning.cmake
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -Dsrc=/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Debug/VST3/GainMeter.vst3 -Ddest=/Users/divijsingh/Library/Audio/Plug-Ins/VST3 -P /Users/divijsingh/JUCE/extras/Build/CMake/copyDir.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -E copy /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_VST3/PkgInfo /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Release/VST3/GainMeter.vst3/Contents
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -Dsrc=/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Release/VST3/GainMeter.vst3 -P /Users/divijsingh/JUCE/extras/Build/CMake/checkBundleSigning.cmake
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -E echo removing\\ moduleinfo.json
+  /Applications/CMake.app/Contents/bin/cmake -E remove -f /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Release/VST3/GainMeter.vst3/Contents/moduleinfo.json /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Release/VST3/GainMeter.vst3/Contents/Resources/moduleinfo.json
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -E echo \"creating /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Release/VST3/GainMeter.vst3/Contents/Resources/moduleinfo.json\"
+  /Applications/CMake.app/Contents/bin/cmake -E make_directory /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Release/VST3/GainMeter.vst3/Contents/Resources
+  /Users/divijsingh/repos/gainmeter-plugin/build/Release/juce_vst3_helper -create -version 0.1.0 -path /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Release/VST3/GainMeter.vst3 -output /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Release/VST3/GainMeter.vst3/Contents/Resources/moduleinfo.json
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -Dsrc=/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Release/VST3/GainMeter.vst3 -P /Users/divijsingh/JUCE/extras/Build/CMake/checkBundleSigning.cmake
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -Dsrc=/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Release/VST3/GainMeter.vst3 -Ddest=/Users/divijsingh/Library/Audio/Plug-Ins/VST3 -P /Users/divijsingh/JUCE/extras/Build/CMake/copyDir.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -E copy /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_VST3/PkgInfo /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/MinSizeRel/VST3/GainMeter.vst3/Contents
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -Dsrc=/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/MinSizeRel/VST3/GainMeter.vst3 -P /Users/divijsingh/JUCE/extras/Build/CMake/checkBundleSigning.cmake
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -E echo removing\\ moduleinfo.json
+  /Applications/CMake.app/Contents/bin/cmake -E remove -f /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/MinSizeRel/VST3/GainMeter.vst3/Contents/moduleinfo.json /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/MinSizeRel/VST3/GainMeter.vst3/Contents/Resources/moduleinfo.json
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -E echo \"creating /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/MinSizeRel/VST3/GainMeter.vst3/Contents/Resources/moduleinfo.json\"
+  /Applications/CMake.app/Contents/bin/cmake -E make_directory /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/MinSizeRel/VST3/GainMeter.vst3/Contents/Resources
+  /Users/divijsingh/repos/gainmeter-plugin/build/MinSizeRel/juce_vst3_helper -create -version 0.1.0 -path /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/MinSizeRel/VST3/GainMeter.vst3 -output /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/MinSizeRel/VST3/GainMeter.vst3/Contents/Resources/moduleinfo.json
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -Dsrc=/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/MinSizeRel/VST3/GainMeter.vst3 -P /Users/divijsingh/JUCE/extras/Build/CMake/checkBundleSigning.cmake
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -Dsrc=/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/MinSizeRel/VST3/GainMeter.vst3 -Ddest=/Users/divijsingh/Library/Audio/Plug-Ins/VST3 -P /Users/divijsingh/JUCE/extras/Build/CMake/copyDir.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -E copy /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_VST3/PkgInfo /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/RelWithDebInfo/VST3/GainMeter.vst3/Contents
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -Dsrc=/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/RelWithDebInfo/VST3/GainMeter.vst3 -P /Users/divijsingh/JUCE/extras/Build/CMake/checkBundleSigning.cmake
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -E echo removing\\ moduleinfo.json
+  /Applications/CMake.app/Contents/bin/cmake -E remove -f /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/RelWithDebInfo/VST3/GainMeter.vst3/Contents/moduleinfo.json /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/RelWithDebInfo/VST3/GainMeter.vst3/Contents/Resources/moduleinfo.json
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -E echo \"creating /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/RelWithDebInfo/VST3/GainMeter.vst3/Contents/Resources/moduleinfo.json\"
+  /Applications/CMake.app/Contents/bin/cmake -E make_directory /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/RelWithDebInfo/VST3/GainMeter.vst3/Contents/Resources
+  /Users/divijsingh/repos/gainmeter-plugin/build/RelWithDebInfo/juce_vst3_helper -create -version 0.1.0 -path /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/RelWithDebInfo/VST3/GainMeter.vst3 -output /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/RelWithDebInfo/VST3/GainMeter.vst3/Contents/Resources/moduleinfo.json
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -Dsrc=/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/RelWithDebInfo/VST3/GainMeter.vst3 -P /Users/divijsingh/JUCE/extras/Build/CMake/checkBundleSigning.cmake
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -Dsrc=/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/RelWithDebInfo/VST3/GainMeter.vst3 -Ddest=/Users/divijsingh/Library/Audio/Plug-Ins/VST3 -P /Users/divijsingh/JUCE/extras/Build/CMake/copyDir.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		94A71F964B768EC58C8D949F /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/divijsingh/repos/gainmeter-plugin/build/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		B3933A3205E3EA492E805094 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/divijsingh/repos/gainmeter-plugin/build/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  make -f /Users/divijsingh/repos/gainmeter-plugin/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  make -f /Users/divijsingh/repos/gainmeter-plugin/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  make -f /Users/divijsingh/repos/gainmeter-plugin/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  make -f /Users/divijsingh/repos/gainmeter-plugin/build/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		C5D0AE460251563B4FA8C327 /* Generate GainMeter_artefacts/JuceLibraryCode/GainMeter_VST3/PkgInfo */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate GainMeter_artefacts/JuceLibraryCode/GainMeter_VST3/PkgInfo";
+			outputPaths = (
+"/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_VST3/PkgInfo"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Users/divijsingh/repos/gainmeter-plugin/build/JUCE/tools/extras/Build/juceaide/juceaide_artefacts/Custom/juceaide pkginfo VST3 /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_VST3/PkgInfo
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Users/divijsingh/repos/gainmeter-plugin/build/JUCE/tools/extras/Build/juceaide/juceaide_artefacts/Custom/juceaide pkginfo VST3 /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_VST3/PkgInfo
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Users/divijsingh/repos/gainmeter-plugin/build/JUCE/tools/extras/Build/juceaide/juceaide_artefacts/Custom/juceaide pkginfo VST3 /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_VST3/PkgInfo
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build
+  /Users/divijsingh/repos/gainmeter-plugin/build/JUCE/tools/extras/Build/juceaide/juceaide_artefacts/Custom/juceaide pkginfo VST3 /Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_VST3/PkgInfo
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7AE37032D0D44ED5B27115EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB44125B55E4BA9A8EE41EF /* /Users/divijsingh/JUCE/modules/juce_audio_basics/juce_audio_basics.mm */,
+				BB06368914744A0DA5642251 /* /Users/divijsingh/JUCE/modules/juce_audio_devices/juce_audio_devices.mm */,
+				E3AD98AC38A649A09A80EEEF /* /Users/divijsingh/JUCE/modules/juce_audio_formats/juce_audio_formats.mm */,
+				904E3CDBEF444917AA451F2E /* /Users/divijsingh/JUCE/modules/juce_audio_processors/juce_audio_processors.mm */,
+				9F0351C4B2724153B2E88A7C /* /Users/divijsingh/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp */,
+				8947A246D6D441C2B7E089C1 /* /Users/divijsingh/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp */,
+				2F11132D5FD548D78F47DD24 /* /Users/divijsingh/JUCE/modules/juce_audio_utils/juce_audio_utils.mm */,
+				9ECD18E938BA43CD8F8F12C7 /* /Users/divijsingh/JUCE/modules/juce_core/juce_core.mm */,
+				7665F2FDA7BB4ED1BEC8BB8A /* /Users/divijsingh/JUCE/modules/juce_core/juce_core_CompilationTime.cpp */,
+				F0801AF0E24E4D6EB484782B /* /Users/divijsingh/JUCE/modules/juce_data_structures/juce_data_structures.mm */,
+				0DA89F608FB94271A1888C91 /* /Users/divijsingh/JUCE/modules/juce_events/juce_events.mm */,
+				DFDB575DDAFE48A29896F76D /* /Users/divijsingh/JUCE/modules/juce_graphics/juce_graphics.mm */,
+				FA8A1F50D95744C9A7C9C426 /* /Users/divijsingh/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp */,
+				8BF43ED7E6044BA8962AD8B9 /* /Users/divijsingh/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c */,
+				FF1D6847AEDE4529B2384C1E /* /Users/divijsingh/JUCE/modules/juce_gui_basics/juce_gui_basics.mm */,
+				D09B645C39C54023991F741C /* /Users/divijsingh/JUCE/modules/juce_gui_extra/juce_gui_extra.mm */,
+				59D5029CC16F4A7A97032639 /* /Users/divijsingh/repos/gainmeter-plugin/Source/PluginEditor.cpp */,
+				01E84776C935499F9FF72EFB /* /Users/divijsingh/repos/gainmeter-plugin/Source/PluginProcessor.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B58280F2FC1A45B79B922F7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A169B65DB1734C03BE46E893 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/VST3/juce_VST3ManifestHelper.mm */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10E5FD5C9834DEDB16430DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B395A9745F5745EF8C022A98 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.mm */,
+				EE54B0E8FD724914AE42E911 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp */,
+				04064FE470FA4EA48B72EB2A /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp */,
+				C1CAC52867F2495C8DF13E74 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_1.mm */,
+				F45A08C8D4414F57A751BFC5 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_2.mm */,
+				F64C66555BA14238A0AD6396 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AUv3.mm */,
+				FF12151C6AD844FCB0275851 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.mm */,
+				FF50E65A56FB47C285E55F8C /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp */,
+				94BCA7196E194BD3B3F2880C /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp */,
+				360B043791E947529DEABB4D /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.mm */,
+				A659059805DF4B9B90F5A77B /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.mm */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E469B087B5D9419898B391F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				149801825E50433998091F57 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX.mm */,
+				5115BB6F679944E0A582FCF1 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AAX_utils.cpp */,
+				1471B1D3AF6243F3A652F497 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_ARA.cpp */,
+				7E7A47C5BF09493C8DF1B3D9 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_1.mm */,
+				7953B6F6FF544AB8AE370A7E /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_2.mm */,
+				D89F11D6D52C48308888B4EA /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AUv3.mm */,
+				AA46FAA3350147D18BC0FC48 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_LV2.mm */,
+				5A7056949BD84349950DD412 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp */,
+				533ED64BF6AF4B928E569080 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Unity.cpp */,
+				79151AED4DA7468D8F120872 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST2.mm */,
+				9ECCAD23E8094B3293A3E482 /* /Users/divijsingh/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_VST3.mm */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		006B625515CA41EC9C354BB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72D34305AA324453989ACE08 /* GainMeter_AU */;
+			targetProxy = B13C547BFCA845548F6FA66E /* PBXContainerItemProxy */;
+		};
+		17893A3D49B5451991E04DB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCC55876826746B8AABCCE1B /* ZERO_CHECK */;
+			targetProxy = 576B27A365F34589A8DC4A7E /* PBXContainerItemProxy */;
+		};
+		2F02B0B822824974955B1FFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCC55876826746B8AABCCE1B /* ZERO_CHECK */;
+			targetProxy = 7BA6A5D0DC6D4A819FF29705 /* PBXContainerItemProxy */;
+		};
+		365863FE4429465FAD0C6876 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52B159894B3F4BA09BFCA403 /* GainMeter_VST3 */;
+			targetProxy = 9DABE0D8C34E4B7898A246A0 /* PBXContainerItemProxy */;
+		};
+		45EC51FF624B4B9C878FF2D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCC55876826746B8AABCCE1B /* ZERO_CHECK */;
+			targetProxy = CEC2F70D88304DC9A6067C85 /* PBXContainerItemProxy */;
+		};
+		56913091CC034B8A8323CE5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79F6B3BCDBBF4E00B22B9C5E /* GainMeter */;
+			targetProxy = BCAE1FDC361A40C4A6B3B8A3 /* PBXContainerItemProxy */;
+		};
+		59210287FD644D49B2941CF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8734E87743504D6BB6F80AAF /* juce_vst3_helper */;
+			targetProxy = E81E71E8928648F4A8CA5C57 /* PBXContainerItemProxy */;
+		};
+		5D624D2D69834D77924F71E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCC55876826746B8AABCCE1B /* ZERO_CHECK */;
+			targetProxy = 8732211922244E0FBEB6517B /* PBXContainerItemProxy */;
+		};
+		7A12493A525E4EBCB352D910 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52B159894B3F4BA09BFCA403 /* GainMeter_VST3 */;
+			targetProxy = 25DC7F45BFE147D6864F390E /* PBXContainerItemProxy */;
+		};
+		842D9AC9A034467F8A0AEB93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8734E87743504D6BB6F80AAF /* juce_vst3_helper */;
+			targetProxy = E08E90385EA24E1EA6992C03 /* PBXContainerItemProxy */;
+		};
+		A301ADDD84F84CFDAC177497 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCC55876826746B8AABCCE1B /* ZERO_CHECK */;
+			targetProxy = A9E3BEF01D5749D2A2B94FDE /* PBXContainerItemProxy */;
+		};
+		B8753FFB06664499BDE1FCDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79F6B3BCDBBF4E00B22B9C5E /* GainMeter */;
+			targetProxy = D8AF429E205943D0B5C5D257 /* PBXContainerItemProxy */;
+		};
+		C1AF0F05E54F418B8899E6BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCC55876826746B8AABCCE1B /* ZERO_CHECK */;
+			targetProxy = E24F94914BA841E6A44040C2 /* PBXContainerItemProxy */;
+		};
+		DE359624F16E447B8EAFCECF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F72839D953B4C52885E408E /* ALL_BUILD */;
+			targetProxy = E95EF85D8BA44324976C5B09 /* PBXContainerItemProxy */;
+		};
+		E7C6197887C64F1F99FCC498 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79F6B3BCDBBF4E00B22B9C5E /* GainMeter */;
+			targetProxy = 4FB008CE76BC4384870C6227 /* PBXContainerItemProxy */;
+		};
+		F15481CCF2634890BDA06286 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 72D34305AA324453989ACE08 /* GainMeter_AU */;
+			targetProxy = 8855AB8022974436AAB73F0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04677C05F6934B248E825121 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/divijsingh/repos/gainmeter-plugin/build/build";
+			};
+			name = MinSizeRel;
+		};
+		0B9DDB89630B4685B5C85DD2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/RelWithDebInfo";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'JucePlugin_Build_AU=1'","'JucePlugin_Build_AUv3=0'","'JucePlugin_Build_AAX=0'","'JucePlugin_Build_LV2=0'","'JucePlugin_Build_Standalone=0'","'JucePlugin_Build_Unity=0'","'JucePlugin_Build_VST=0'","'JucePlugin_Build_VST3=1'","'JUCE_SHARED_CODE=1'","'JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone'","'JucePlugin_IsSynth=0'","'JucePlugin_ManufacturerCode=0x45544852'","'JucePlugin_Manufacturer=\"Esoteryca\"'","'JucePlugin_ManufacturerWebsite=\"\"'","'JucePlugin_ManufacturerEmail=\"\"'","'JucePlugin_PluginCode=0x476e4d74'","'JucePlugin_ProducesMidiOutput=0'","'JucePlugin_IsMidiEffect=0'","'JucePlugin_WantsMidiInput=0'","'JucePlugin_EditorRequiresKeyboardFocus=0'","'JucePlugin_Name=\"GainMeter\"'","'JucePlugin_Desc=\"GainMeter\"'","'JucePlugin_Version=0.1.0'","'JucePlugin_VersionString=\"0.1.0\"'","'JucePlugin_VersionCode=0x100'","'JucePlugin_VSTUniqueID=JucePlugin_PluginCode'","'JucePlugin_VSTCategory=kPlugCategEffect'","'JucePlugin_Vst3Category=\"Fx\"'","'JucePlugin_AUMainType='\\''aufx'\\'''","'JucePlugin_AUSubType=JucePlugin_PluginCode'","'JucePlugin_AUExportPrefix=GainMeterAU'","'JucePlugin_AUExportPrefixQuoted=\"GainMeterAU\"'","'JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode'","'JucePlugin_CFBundleIdentifier=com.Esoteryca.GainMeter'","'JucePlugin_AAXIdentifier=com.Esoteryca.GainMeter'","'JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode'","'JucePlugin_AAXProductId=JucePlugin_PluginCode'","'JucePlugin_AAXCategory=0'","'JucePlugin_AAXDisableBypass=0'","'JucePlugin_AAXDisableMultiMono=0'","'JucePlugin_VSTNumMidiInputs=16'","'JucePlugin_VSTNumMidiOutputs=16'","'JucePlugin_Enable_ARA=0'","'JucePlugin_ARAFactoryID=\"com.Esoteryca.GainMeter.arafactory.0.1.0\"'","'JucePlugin_ARADocumentArchiveID=\"com.Esoteryca.GainMeter.aradocumentarchive.1\"'","'JucePlugin_ARACompatibleArchiveIDs=\"\"'","'JucePlugin_ARAContentTypes=0'","'JucePlugin_ARATransformationFlags=0'","'JUCE_WEB_BROWSER=0'","'JUCE_USE_CURL=0'","'JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1'","'JUCE_MODULE_AVAILABLE_juce_audio_processors=1'","'JUCE_MODULE_AVAILABLE_juce_gui_extra=1'","'JUCE_MODULE_AVAILABLE_juce_gui_basics=1'","'JUCE_MODULE_AVAILABLE_juce_graphics=1'","'JUCE_MODULE_AVAILABLE_juce_events=1'","'JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1'","'NDEBUG=1'","'_NDEBUG=1'","'JUCE_MODULE_AVAILABLE_juce_core=1'","'JUCE_MODULE_AVAILABLE_juce_data_structures=1'","'JUCE_MODULE_AVAILABLE_juce_audio_basics=1'","'JUCE_MODULE_AVAILABLE_juce_audio_utils=1'","'JUCE_MODULE_AVAILABLE_juce_audio_formats=1'","'JUCE_MODULE_AVAILABLE_juce_audio_devices=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode",/Users/divijsingh/JUCE/modules,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lv2,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/serd,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord/src,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sratom,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("       -DNDEBUG -fPIC -fvisibility=hidden ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' -fPIC -fvisibility=hidden -fvisibility-inlines-hidden ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = GainMeter_SharedCode;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/build/GainMeter.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		11A565D9E0A34FA3915640CE /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = GainMeter_All;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		15F82231793F49A395A3E993 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_ENTITLEMENTS = "/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_VST3.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Release/VST3";
+				ENABLE_HARDENED_RUNTIME = FALSE;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GainMeter_VST3_EXPORTS,"'JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1'","'NDEBUG=1'","'_NDEBUG=1'","'JucePlugin_IsSynth=0'","'JucePlugin_ManufacturerCode=0x45544852'","'JucePlugin_Manufacturer=\"Esoteryca\"'","'JucePlugin_ManufacturerWebsite=\"\"'","'JucePlugin_ManufacturerEmail=\"\"'","'JucePlugin_PluginCode=0x476e4d74'","'JucePlugin_ProducesMidiOutput=0'","'JucePlugin_IsMidiEffect=0'","'JucePlugin_WantsMidiInput=0'","'JucePlugin_EditorRequiresKeyboardFocus=0'","'JucePlugin_Name=\"GainMeter\"'","'JucePlugin_Desc=\"GainMeter\"'","'JucePlugin_Version=0.1.0'","'JucePlugin_VersionString=\"0.1.0\"'","'JucePlugin_VersionCode=0x100'","'JucePlugin_VSTUniqueID=JucePlugin_PluginCode'","'JucePlugin_VSTCategory=kPlugCategEffect'","'JucePlugin_Vst3Category=\"Fx\"'","'JucePlugin_AUMainType='\\''aufx'\\'''","'JucePlugin_AUSubType=JucePlugin_PluginCode'","'JucePlugin_AUExportPrefix=GainMeterAU'","'JucePlugin_AUExportPrefixQuoted=\"GainMeterAU\"'","'JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode'","'JucePlugin_CFBundleIdentifier=com.Esoteryca.GainMeter'","'JucePlugin_AAXIdentifier=com.Esoteryca.GainMeter'","'JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode'","'JucePlugin_AAXProductId=JucePlugin_PluginCode'","'JucePlugin_AAXCategory=0'","'JucePlugin_AAXDisableBypass=0'","'JucePlugin_AAXDisableMultiMono=0'","'JucePlugin_VSTNumMidiInputs=16'","'JucePlugin_VSTNumMidiOutputs=16'","'JucePlugin_Enable_ARA=0'","'JucePlugin_ARAFactoryID=\"com.Esoteryca.GainMeter.arafactory.0.1.0\"'","'JucePlugin_ARADocumentArchiveID=\"com.Esoteryca.GainMeter.aradocumentarchive.1\"'","'JucePlugin_ARACompatibleArchiveIDs=\"\"'","'JucePlugin_ARAContentTypes=0'","'JucePlugin_ARATransformationFlags=0'","'JUCE_WEB_BROWSER=0'","'JUCE_USE_CURL=0'","'JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1'","'JUCE_MODULE_AVAILABLE_juce_audio_processors=1'","'JUCE_MODULE_AVAILABLE_juce_gui_extra=1'","'JUCE_MODULE_AVAILABLE_juce_gui_basics=1'","'JUCE_MODULE_AVAILABLE_juce_graphics=1'","'JUCE_MODULE_AVAILABLE_juce_events=1'","'JUCE_MODULE_AVAILABLE_juce_core=1'","'JUCE_MODULE_AVAILABLE_juce_data_structures=1'","'JUCE_MODULE_AVAILABLE_juce_audio_basics=1'","'JUCE_MODULE_AVAILABLE_juce_audio_utils=1'","'JUCE_MODULE_AVAILABLE_juce_audio_formats=1'","'JUCE_MODULE_AVAILABLE_juce_audio_devices=1'","'JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone'","'JucePlugin_Build_AU=0'","'JucePlugin_Build_AUv3=0'","'JucePlugin_Build_AAX=0'","'JucePlugin_Build_LV2=0'","'JucePlugin_Build_Standalone=0'","'JucePlugin_Build_Unity=0'","'JucePlugin_Build_VST=0'","'JucePlugin_Build_VST3=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = ("/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode",/Users/divijsingh/JUCE/modules,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lv2,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/serd,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord/src,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sratom,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src,"$(inherited)");
+				INFOPLIST_FILE = "/Users/divijsingh/repos/gainmeter-plugin/build/CMakeFiles/GainMeter_VST3.dir/Info.plist";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				LIBRARY_STYLE = Bundle;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' -fPIC -fvisibility=hidden -fvisibility-inlines-hidden ";
+				OTHER_LDFLAGS = (" -bundle -Wl,-headerpad_max_install_names","/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Release/libGainMeter_SharedCode.a","-Xlinker -framework -Xlinker WebKit","-weak_framework Metal","-weak_framework MetalKit","-Xlinker -framework -Xlinker CoreAudioKit","-Xlinker -framework -Xlinker DiscRecording","-Xlinker -framework -Xlinker QuartzCore","-Xlinker -framework -Xlinker CoreAudio","-Xlinker -framework -Xlinker CoreMIDI","-Xlinker -framework -Xlinker AudioToolbox","-Xlinker -framework -Xlinker Accelerate","-Xlinker -framework -Xlinker Cocoa","-Xlinker -framework -Xlinker Foundation","-Xlinker -framework -Xlinker IOKit","-Xlinker -framework -Xlinker Security","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Esoteryca.GainMeter;
+				PRODUCT_NAME = GainMeter;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGET_TEMP_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/build/GainMeter_VST3.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+				WRAPPER_EXTENSION = vst3;
+			};
+			name = Release;
+		};
+		1A3A345B325D4F4CA4BBB7AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/divijsingh/repos/gainmeter-plugin/build/build";
+			};
+			name = Release;
+		};
+		1C79CE26B9754D0385A20B8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/Release";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1'","'NDEBUG=1'","'_NDEBUG=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,/Users/divijsingh/JUCE/modules,"$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' -fobjc-arc     ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-Xlinker -framework -Xlinker Cocoa","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = juce_vst3_helper;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/build/juce_vst3_helper.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		1DBD0C87215A407C8D7A9C35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_ENTITLEMENTS = "/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_VST3.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Debug/VST3";
+				ENABLE_HARDENED_RUNTIME = FALSE;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GainMeter_VST3_EXPORTS,"'JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1'","'DEBUG=1'","'_DEBUG=1'","'JucePlugin_IsSynth=0'","'JucePlugin_ManufacturerCode=0x45544852'","'JucePlugin_Manufacturer=\"Esoteryca\"'","'JucePlugin_ManufacturerWebsite=\"\"'","'JucePlugin_ManufacturerEmail=\"\"'","'JucePlugin_PluginCode=0x476e4d74'","'JucePlugin_ProducesMidiOutput=0'","'JucePlugin_IsMidiEffect=0'","'JucePlugin_WantsMidiInput=0'","'JucePlugin_EditorRequiresKeyboardFocus=0'","'JucePlugin_Name=\"GainMeter\"'","'JucePlugin_Desc=\"GainMeter\"'","'JucePlugin_Version=0.1.0'","'JucePlugin_VersionString=\"0.1.0\"'","'JucePlugin_VersionCode=0x100'","'JucePlugin_VSTUniqueID=JucePlugin_PluginCode'","'JucePlugin_VSTCategory=kPlugCategEffect'","'JucePlugin_Vst3Category=\"Fx\"'","'JucePlugin_AUMainType='\\''aufx'\\'''","'JucePlugin_AUSubType=JucePlugin_PluginCode'","'JucePlugin_AUExportPrefix=GainMeterAU'","'JucePlugin_AUExportPrefixQuoted=\"GainMeterAU\"'","'JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode'","'JucePlugin_CFBundleIdentifier=com.Esoteryca.GainMeter'","'JucePlugin_AAXIdentifier=com.Esoteryca.GainMeter'","'JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode'","'JucePlugin_AAXProductId=JucePlugin_PluginCode'","'JucePlugin_AAXCategory=0'","'JucePlugin_AAXDisableBypass=0'","'JucePlugin_AAXDisableMultiMono=0'","'JucePlugin_VSTNumMidiInputs=16'","'JucePlugin_VSTNumMidiOutputs=16'","'JucePlugin_Enable_ARA=0'","'JucePlugin_ARAFactoryID=\"com.Esoteryca.GainMeter.arafactory.0.1.0\"'","'JucePlugin_ARADocumentArchiveID=\"com.Esoteryca.GainMeter.aradocumentarchive.1\"'","'JucePlugin_ARACompatibleArchiveIDs=\"\"'","'JucePlugin_ARAContentTypes=0'","'JucePlugin_ARATransformationFlags=0'","'JUCE_WEB_BROWSER=0'","'JUCE_USE_CURL=0'","'JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1'","'JUCE_MODULE_AVAILABLE_juce_audio_processors=1'","'JUCE_MODULE_AVAILABLE_juce_gui_extra=1'","'JUCE_MODULE_AVAILABLE_juce_gui_basics=1'","'JUCE_MODULE_AVAILABLE_juce_graphics=1'","'JUCE_MODULE_AVAILABLE_juce_events=1'","'JUCE_MODULE_AVAILABLE_juce_core=1'","'JUCE_MODULE_AVAILABLE_juce_data_structures=1'","'JUCE_MODULE_AVAILABLE_juce_audio_basics=1'","'JUCE_MODULE_AVAILABLE_juce_audio_utils=1'","'JUCE_MODULE_AVAILABLE_juce_audio_formats=1'","'JUCE_MODULE_AVAILABLE_juce_audio_devices=1'","'JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone'","'JucePlugin_Build_AU=0'","'JucePlugin_Build_AUv3=0'","'JucePlugin_Build_AAX=0'","'JucePlugin_Build_LV2=0'","'JucePlugin_Build_Standalone=0'","'JucePlugin_Build_Unity=0'","'JucePlugin_Build_VST=0'","'JucePlugin_Build_VST3=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = ("/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode",/Users/divijsingh/JUCE/modules,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lv2,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/serd,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord/src,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sratom,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src,"$(inherited)");
+				INFOPLIST_FILE = "/Users/divijsingh/repos/gainmeter-plugin/build/CMakeFiles/GainMeter_VST3.dir/Info.plist";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				LIBRARY_STYLE = Bundle;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' -fPIC -fvisibility=hidden -fvisibility-inlines-hidden ";
+				OTHER_LDFLAGS = (" -bundle -Wl,-headerpad_max_install_names","/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Debug/libGainMeter_SharedCode.a","-Xlinker -framework -Xlinker WebKit","-weak_framework Metal","-weak_framework MetalKit","-Xlinker -framework -Xlinker CoreAudioKit","-Xlinker -framework -Xlinker DiscRecording","-Xlinker -framework -Xlinker QuartzCore","-Xlinker -framework -Xlinker CoreAudio","-Xlinker -framework -Xlinker CoreMIDI","-Xlinker -framework -Xlinker AudioToolbox","-Xlinker -framework -Xlinker Accelerate","-Xlinker -framework -Xlinker Cocoa","-Xlinker -framework -Xlinker Foundation","-Xlinker -framework -Xlinker IOKit","-Xlinker -framework -Xlinker Security","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Esoteryca.GainMeter;
+				PRODUCT_NAME = GainMeter;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGET_TEMP_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/build/GainMeter_VST3.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+				WRAPPER_EXTENSION = vst3;
+			};
+			name = Debug;
+		};
+		36CBE0A1EF0B4494BD0F8DE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Debug";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'JucePlugin_Build_AU=1'","'JucePlugin_Build_AUv3=0'","'JucePlugin_Build_AAX=0'","'JucePlugin_Build_LV2=0'","'JucePlugin_Build_Standalone=0'","'JucePlugin_Build_Unity=0'","'JucePlugin_Build_VST=0'","'JucePlugin_Build_VST3=1'","'JUCE_SHARED_CODE=1'","'JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone'","'JucePlugin_IsSynth=0'","'JucePlugin_ManufacturerCode=0x45544852'","'JucePlugin_Manufacturer=\"Esoteryca\"'","'JucePlugin_ManufacturerWebsite=\"\"'","'JucePlugin_ManufacturerEmail=\"\"'","'JucePlugin_PluginCode=0x476e4d74'","'JucePlugin_ProducesMidiOutput=0'","'JucePlugin_IsMidiEffect=0'","'JucePlugin_WantsMidiInput=0'","'JucePlugin_EditorRequiresKeyboardFocus=0'","'JucePlugin_Name=\"GainMeter\"'","'JucePlugin_Desc=\"GainMeter\"'","'JucePlugin_Version=0.1.0'","'JucePlugin_VersionString=\"0.1.0\"'","'JucePlugin_VersionCode=0x100'","'JucePlugin_VSTUniqueID=JucePlugin_PluginCode'","'JucePlugin_VSTCategory=kPlugCategEffect'","'JucePlugin_Vst3Category=\"Fx\"'","'JucePlugin_AUMainType='\\''aufx'\\'''","'JucePlugin_AUSubType=JucePlugin_PluginCode'","'JucePlugin_AUExportPrefix=GainMeterAU'","'JucePlugin_AUExportPrefixQuoted=\"GainMeterAU\"'","'JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode'","'JucePlugin_CFBundleIdentifier=com.Esoteryca.GainMeter'","'JucePlugin_AAXIdentifier=com.Esoteryca.GainMeter'","'JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode'","'JucePlugin_AAXProductId=JucePlugin_PluginCode'","'JucePlugin_AAXCategory=0'","'JucePlugin_AAXDisableBypass=0'","'JucePlugin_AAXDisableMultiMono=0'","'JucePlugin_VSTNumMidiInputs=16'","'JucePlugin_VSTNumMidiOutputs=16'","'JucePlugin_Enable_ARA=0'","'JucePlugin_ARAFactoryID=\"com.Esoteryca.GainMeter.arafactory.0.1.0\"'","'JucePlugin_ARADocumentArchiveID=\"com.Esoteryca.GainMeter.aradocumentarchive.1\"'","'JucePlugin_ARACompatibleArchiveIDs=\"\"'","'JucePlugin_ARAContentTypes=0'","'JucePlugin_ARATransformationFlags=0'","'JUCE_WEB_BROWSER=0'","'JUCE_USE_CURL=0'","'JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1'","'JUCE_MODULE_AVAILABLE_juce_audio_processors=1'","'JUCE_MODULE_AVAILABLE_juce_gui_extra=1'","'JUCE_MODULE_AVAILABLE_juce_gui_basics=1'","'JUCE_MODULE_AVAILABLE_juce_graphics=1'","'JUCE_MODULE_AVAILABLE_juce_events=1'","'JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1'","'DEBUG=1'","'_DEBUG=1'","'JUCE_MODULE_AVAILABLE_juce_core=1'","'JUCE_MODULE_AVAILABLE_juce_data_structures=1'","'JUCE_MODULE_AVAILABLE_juce_audio_basics=1'","'JUCE_MODULE_AVAILABLE_juce_audio_utils=1'","'JUCE_MODULE_AVAILABLE_juce_audio_formats=1'","'JUCE_MODULE_AVAILABLE_juce_audio_devices=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode",/Users/divijsingh/JUCE/modules,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lv2,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/serd,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord/src,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sratom,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("   -fPIC -fvisibility=hidden ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' -fPIC -fvisibility=hidden -fvisibility-inlines-hidden ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = GainMeter_SharedCode;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/build/GainMeter.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		3B006C6D168C40B6B059611E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_ENTITLEMENTS = "/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_VST3.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/RelWithDebInfo/VST3";
+				ENABLE_HARDENED_RUNTIME = FALSE;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GainMeter_VST3_EXPORTS,"'JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1'","'NDEBUG=1'","'_NDEBUG=1'","'JucePlugin_IsSynth=0'","'JucePlugin_ManufacturerCode=0x45544852'","'JucePlugin_Manufacturer=\"Esoteryca\"'","'JucePlugin_ManufacturerWebsite=\"\"'","'JucePlugin_ManufacturerEmail=\"\"'","'JucePlugin_PluginCode=0x476e4d74'","'JucePlugin_ProducesMidiOutput=0'","'JucePlugin_IsMidiEffect=0'","'JucePlugin_WantsMidiInput=0'","'JucePlugin_EditorRequiresKeyboardFocus=0'","'JucePlugin_Name=\"GainMeter\"'","'JucePlugin_Desc=\"GainMeter\"'","'JucePlugin_Version=0.1.0'","'JucePlugin_VersionString=\"0.1.0\"'","'JucePlugin_VersionCode=0x100'","'JucePlugin_VSTUniqueID=JucePlugin_PluginCode'","'JucePlugin_VSTCategory=kPlugCategEffect'","'JucePlugin_Vst3Category=\"Fx\"'","'JucePlugin_AUMainType='\\''aufx'\\'''","'JucePlugin_AUSubType=JucePlugin_PluginCode'","'JucePlugin_AUExportPrefix=GainMeterAU'","'JucePlugin_AUExportPrefixQuoted=\"GainMeterAU\"'","'JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode'","'JucePlugin_CFBundleIdentifier=com.Esoteryca.GainMeter'","'JucePlugin_AAXIdentifier=com.Esoteryca.GainMeter'","'JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode'","'JucePlugin_AAXProductId=JucePlugin_PluginCode'","'JucePlugin_AAXCategory=0'","'JucePlugin_AAXDisableBypass=0'","'JucePlugin_AAXDisableMultiMono=0'","'JucePlugin_VSTNumMidiInputs=16'","'JucePlugin_VSTNumMidiOutputs=16'","'JucePlugin_Enable_ARA=0'","'JucePlugin_ARAFactoryID=\"com.Esoteryca.GainMeter.arafactory.0.1.0\"'","'JucePlugin_ARADocumentArchiveID=\"com.Esoteryca.GainMeter.aradocumentarchive.1\"'","'JucePlugin_ARACompatibleArchiveIDs=\"\"'","'JucePlugin_ARAContentTypes=0'","'JucePlugin_ARATransformationFlags=0'","'JUCE_WEB_BROWSER=0'","'JUCE_USE_CURL=0'","'JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1'","'JUCE_MODULE_AVAILABLE_juce_audio_processors=1'","'JUCE_MODULE_AVAILABLE_juce_gui_extra=1'","'JUCE_MODULE_AVAILABLE_juce_gui_basics=1'","'JUCE_MODULE_AVAILABLE_juce_graphics=1'","'JUCE_MODULE_AVAILABLE_juce_events=1'","'JUCE_MODULE_AVAILABLE_juce_core=1'","'JUCE_MODULE_AVAILABLE_juce_data_structures=1'","'JUCE_MODULE_AVAILABLE_juce_audio_basics=1'","'JUCE_MODULE_AVAILABLE_juce_audio_utils=1'","'JUCE_MODULE_AVAILABLE_juce_audio_formats=1'","'JUCE_MODULE_AVAILABLE_juce_audio_devices=1'","'JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone'","'JucePlugin_Build_AU=0'","'JucePlugin_Build_AUv3=0'","'JucePlugin_Build_AAX=0'","'JucePlugin_Build_LV2=0'","'JucePlugin_Build_Standalone=0'","'JucePlugin_Build_Unity=0'","'JucePlugin_Build_VST=0'","'JucePlugin_Build_VST3=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = ("/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode",/Users/divijsingh/JUCE/modules,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lv2,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/serd,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord/src,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sratom,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src,"$(inherited)");
+				INFOPLIST_FILE = "/Users/divijsingh/repos/gainmeter-plugin/build/CMakeFiles/GainMeter_VST3.dir/Info.plist";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				LIBRARY_STYLE = Bundle;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' -fPIC -fvisibility=hidden -fvisibility-inlines-hidden ";
+				OTHER_LDFLAGS = (" -bundle -Wl,-headerpad_max_install_names","/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/RelWithDebInfo/libGainMeter_SharedCode.a","-Xlinker -framework -Xlinker WebKit","-weak_framework Metal","-weak_framework MetalKit","-Xlinker -framework -Xlinker CoreAudioKit","-Xlinker -framework -Xlinker DiscRecording","-Xlinker -framework -Xlinker QuartzCore","-Xlinker -framework -Xlinker CoreAudio","-Xlinker -framework -Xlinker CoreMIDI","-Xlinker -framework -Xlinker AudioToolbox","-Xlinker -framework -Xlinker Accelerate","-Xlinker -framework -Xlinker Cocoa","-Xlinker -framework -Xlinker Foundation","-Xlinker -framework -Xlinker IOKit","-Xlinker -framework -Xlinker Security","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Esoteryca.GainMeter;
+				PRODUCT_NAME = GainMeter;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGET_TEMP_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/build/GainMeter_VST3.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+				WRAPPER_EXTENSION = vst3;
+			};
+			name = RelWithDebInfo;
+		};
+		3D2DC9A92B72432189F68A1C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/MinSizeRel";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'JucePlugin_Build_AU=1'","'JucePlugin_Build_AUv3=0'","'JucePlugin_Build_AAX=0'","'JucePlugin_Build_LV2=0'","'JucePlugin_Build_Standalone=0'","'JucePlugin_Build_Unity=0'","'JucePlugin_Build_VST=0'","'JucePlugin_Build_VST3=1'","'JUCE_SHARED_CODE=1'","'JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone'","'JucePlugin_IsSynth=0'","'JucePlugin_ManufacturerCode=0x45544852'","'JucePlugin_Manufacturer=\"Esoteryca\"'","'JucePlugin_ManufacturerWebsite=\"\"'","'JucePlugin_ManufacturerEmail=\"\"'","'JucePlugin_PluginCode=0x476e4d74'","'JucePlugin_ProducesMidiOutput=0'","'JucePlugin_IsMidiEffect=0'","'JucePlugin_WantsMidiInput=0'","'JucePlugin_EditorRequiresKeyboardFocus=0'","'JucePlugin_Name=\"GainMeter\"'","'JucePlugin_Desc=\"GainMeter\"'","'JucePlugin_Version=0.1.0'","'JucePlugin_VersionString=\"0.1.0\"'","'JucePlugin_VersionCode=0x100'","'JucePlugin_VSTUniqueID=JucePlugin_PluginCode'","'JucePlugin_VSTCategory=kPlugCategEffect'","'JucePlugin_Vst3Category=\"Fx\"'","'JucePlugin_AUMainType='\\''aufx'\\'''","'JucePlugin_AUSubType=JucePlugin_PluginCode'","'JucePlugin_AUExportPrefix=GainMeterAU'","'JucePlugin_AUExportPrefixQuoted=\"GainMeterAU\"'","'JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode'","'JucePlugin_CFBundleIdentifier=com.Esoteryca.GainMeter'","'JucePlugin_AAXIdentifier=com.Esoteryca.GainMeter'","'JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode'","'JucePlugin_AAXProductId=JucePlugin_PluginCode'","'JucePlugin_AAXCategory=0'","'JucePlugin_AAXDisableBypass=0'","'JucePlugin_AAXDisableMultiMono=0'","'JucePlugin_VSTNumMidiInputs=16'","'JucePlugin_VSTNumMidiOutputs=16'","'JucePlugin_Enable_ARA=0'","'JucePlugin_ARAFactoryID=\"com.Esoteryca.GainMeter.arafactory.0.1.0\"'","'JucePlugin_ARADocumentArchiveID=\"com.Esoteryca.GainMeter.aradocumentarchive.1\"'","'JucePlugin_ARACompatibleArchiveIDs=\"\"'","'JucePlugin_ARAContentTypes=0'","'JucePlugin_ARATransformationFlags=0'","'JUCE_WEB_BROWSER=0'","'JUCE_USE_CURL=0'","'JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1'","'JUCE_MODULE_AVAILABLE_juce_audio_processors=1'","'JUCE_MODULE_AVAILABLE_juce_gui_extra=1'","'JUCE_MODULE_AVAILABLE_juce_gui_basics=1'","'JUCE_MODULE_AVAILABLE_juce_graphics=1'","'JUCE_MODULE_AVAILABLE_juce_events=1'","'JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1'","'NDEBUG=1'","'_NDEBUG=1'","'JUCE_MODULE_AVAILABLE_juce_core=1'","'JUCE_MODULE_AVAILABLE_juce_data_structures=1'","'JUCE_MODULE_AVAILABLE_juce_audio_basics=1'","'JUCE_MODULE_AVAILABLE_juce_audio_utils=1'","'JUCE_MODULE_AVAILABLE_juce_audio_formats=1'","'JUCE_MODULE_AVAILABLE_juce_audio_devices=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode",/Users/divijsingh/JUCE/modules,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lv2,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/serd,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord/src,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sratom,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("    -DNDEBUG -fPIC -fvisibility=hidden ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' -fPIC -fvisibility=hidden -fvisibility-inlines-hidden ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = GainMeter_SharedCode;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/build/GainMeter.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		50619BC0183840758D2DCD11 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/RelWithDebInfo";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1'","'NDEBUG=1'","'_NDEBUG=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,/Users/divijsingh/JUCE/modules,"$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' -fobjc-arc ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-Xlinker -framework -Xlinker Cocoa","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = juce_vst3_helper;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/build/juce_vst3_helper.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		535C8753A9E644DB8887FF4D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		59C2CF600B3A4339BAAD81DA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		657177A7C1234CCCA3DEBF98 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = GainMeter_All;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		674C9FE8197846F4963D90F6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6AB0239F90EE45FBB96718B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_ENTITLEMENTS = "/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_AU.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Debug/AU";
+				ENABLE_HARDENED_RUNTIME = FALSE;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GainMeter_AU_EXPORTS,"'JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1'","'DEBUG=1'","'_DEBUG=1'","'JucePlugin_IsSynth=0'","'JucePlugin_ManufacturerCode=0x45544852'","'JucePlugin_Manufacturer=\"Esoteryca\"'","'JucePlugin_ManufacturerWebsite=\"\"'","'JucePlugin_ManufacturerEmail=\"\"'","'JucePlugin_PluginCode=0x476e4d74'","'JucePlugin_ProducesMidiOutput=0'","'JucePlugin_IsMidiEffect=0'","'JucePlugin_WantsMidiInput=0'","'JucePlugin_EditorRequiresKeyboardFocus=0'","'JucePlugin_Name=\"GainMeter\"'","'JucePlugin_Desc=\"GainMeter\"'","'JucePlugin_Version=0.1.0'","'JucePlugin_VersionString=\"0.1.0\"'","'JucePlugin_VersionCode=0x100'","'JucePlugin_VSTUniqueID=JucePlugin_PluginCode'","'JucePlugin_VSTCategory=kPlugCategEffect'","'JucePlugin_Vst3Category=\"Fx\"'","'JucePlugin_AUMainType='\\''aufx'\\'''","'JucePlugin_AUSubType=JucePlugin_PluginCode'","'JucePlugin_AUExportPrefix=GainMeterAU'","'JucePlugin_AUExportPrefixQuoted=\"GainMeterAU\"'","'JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode'","'JucePlugin_CFBundleIdentifier=com.Esoteryca.GainMeter'","'JucePlugin_AAXIdentifier=com.Esoteryca.GainMeter'","'JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode'","'JucePlugin_AAXProductId=JucePlugin_PluginCode'","'JucePlugin_AAXCategory=0'","'JucePlugin_AAXDisableBypass=0'","'JucePlugin_AAXDisableMultiMono=0'","'JucePlugin_VSTNumMidiInputs=16'","'JucePlugin_VSTNumMidiOutputs=16'","'JucePlugin_Enable_ARA=0'","'JucePlugin_ARAFactoryID=\"com.Esoteryca.GainMeter.arafactory.0.1.0\"'","'JucePlugin_ARADocumentArchiveID=\"com.Esoteryca.GainMeter.aradocumentarchive.1\"'","'JucePlugin_ARACompatibleArchiveIDs=\"\"'","'JucePlugin_ARAContentTypes=0'","'JucePlugin_ARATransformationFlags=0'","'JUCE_WEB_BROWSER=0'","'JUCE_USE_CURL=0'","'JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1'","'JUCE_MODULE_AVAILABLE_juce_audio_processors=1'","'JUCE_MODULE_AVAILABLE_juce_gui_extra=1'","'JUCE_MODULE_AVAILABLE_juce_gui_basics=1'","'JUCE_MODULE_AVAILABLE_juce_graphics=1'","'JUCE_MODULE_AVAILABLE_juce_events=1'","'JUCE_MODULE_AVAILABLE_juce_core=1'","'JUCE_MODULE_AVAILABLE_juce_data_structures=1'","'JUCE_MODULE_AVAILABLE_juce_audio_basics=1'","'JUCE_MODULE_AVAILABLE_juce_audio_utils=1'","'JUCE_MODULE_AVAILABLE_juce_audio_formats=1'","'JUCE_MODULE_AVAILABLE_juce_audio_devices=1'","'JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone'","'JucePlugin_Build_AU=1'","'JucePlugin_Build_AUv3=0'","'JucePlugin_Build_AAX=0'","'JucePlugin_Build_LV2=0'","'JucePlugin_Build_Standalone=0'","'JucePlugin_Build_Unity=0'","'JucePlugin_Build_VST=0'","'JucePlugin_Build_VST3=0'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = ("/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode",/Users/divijsingh/JUCE/modules,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lv2,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/serd,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord/src,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sratom,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src,/Users/divijsingh/JUCE/modules/juce_audio_plugin_client/AU,"$(inherited)");
+				INFOPLIST_FILE = "/Users/divijsingh/repos/gainmeter-plugin/build/CMakeFiles/GainMeter_AU.dir/Info.plist";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				LIBRARY_STYLE = Bundle;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' -fPIC -fvisibility=hidden -fvisibility-inlines-hidden ";
+				OTHER_LDFLAGS = (" -bundle -Wl,-headerpad_max_install_names","/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Debug/libGainMeter_SharedCode.a","-Xlinker -framework -Xlinker WebKit","-weak_framework Metal","-weak_framework MetalKit","-Xlinker -framework -Xlinker DiscRecording","-Xlinker -framework -Xlinker QuartzCore","-Xlinker -framework -Xlinker CoreAudio","-Xlinker -framework -Xlinker CoreMIDI","-Xlinker -framework -Xlinker AudioToolbox","-Xlinker -framework -Xlinker Accelerate","-Xlinker -framework -Xlinker Cocoa","-Xlinker -framework -Xlinker Foundation","-Xlinker -framework -Xlinker IOKit","-Xlinker -framework -Xlinker Security","-Xlinker -framework -Xlinker AudioUnit","-Xlinker -framework -Xlinker CoreAudioKit","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Esoteryca.GainMeter;
+				PRODUCT_NAME = GainMeter;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGET_TEMP_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/build/GainMeter_AU.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+				WRAPPER_EXTENSION = component;
+			};
+			name = Debug;
+		};
+		6CBA41A21F04468DB14C9433 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = GainMeter_All;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		71EC92F910344C69B2ADBACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk;
+				SYMROOT = "/Users/divijsingh/repos/gainmeter-plugin/build/build";
+			};
+			name = Debug;
+		};
+		89C7895E8C814F9E8C69D1D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		8AC5AB4BF4B54B159F8A17D7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		8D469950ED3040D184D2F1F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = GainMeter_All;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		99CF7663F4254958B7DAD576 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_ENTITLEMENTS = "/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_AU.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/RelWithDebInfo/AU";
+				ENABLE_HARDENED_RUNTIME = FALSE;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GainMeter_AU_EXPORTS,"'JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1'","'NDEBUG=1'","'_NDEBUG=1'","'JucePlugin_IsSynth=0'","'JucePlugin_ManufacturerCode=0x45544852'","'JucePlugin_Manufacturer=\"Esoteryca\"'","'JucePlugin_ManufacturerWebsite=\"\"'","'JucePlugin_ManufacturerEmail=\"\"'","'JucePlugin_PluginCode=0x476e4d74'","'JucePlugin_ProducesMidiOutput=0'","'JucePlugin_IsMidiEffect=0'","'JucePlugin_WantsMidiInput=0'","'JucePlugin_EditorRequiresKeyboardFocus=0'","'JucePlugin_Name=\"GainMeter\"'","'JucePlugin_Desc=\"GainMeter\"'","'JucePlugin_Version=0.1.0'","'JucePlugin_VersionString=\"0.1.0\"'","'JucePlugin_VersionCode=0x100'","'JucePlugin_VSTUniqueID=JucePlugin_PluginCode'","'JucePlugin_VSTCategory=kPlugCategEffect'","'JucePlugin_Vst3Category=\"Fx\"'","'JucePlugin_AUMainType='\\''aufx'\\'''","'JucePlugin_AUSubType=JucePlugin_PluginCode'","'JucePlugin_AUExportPrefix=GainMeterAU'","'JucePlugin_AUExportPrefixQuoted=\"GainMeterAU\"'","'JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode'","'JucePlugin_CFBundleIdentifier=com.Esoteryca.GainMeter'","'JucePlugin_AAXIdentifier=com.Esoteryca.GainMeter'","'JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode'","'JucePlugin_AAXProductId=JucePlugin_PluginCode'","'JucePlugin_AAXCategory=0'","'JucePlugin_AAXDisableBypass=0'","'JucePlugin_AAXDisableMultiMono=0'","'JucePlugin_VSTNumMidiInputs=16'","'JucePlugin_VSTNumMidiOutputs=16'","'JucePlugin_Enable_ARA=0'","'JucePlugin_ARAFactoryID=\"com.Esoteryca.GainMeter.arafactory.0.1.0\"'","'JucePlugin_ARADocumentArchiveID=\"com.Esoteryca.GainMeter.aradocumentarchive.1\"'","'JucePlugin_ARACompatibleArchiveIDs=\"\"'","'JucePlugin_ARAContentTypes=0'","'JucePlugin_ARATransformationFlags=0'","'JUCE_WEB_BROWSER=0'","'JUCE_USE_CURL=0'","'JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1'","'JUCE_MODULE_AVAILABLE_juce_audio_processors=1'","'JUCE_MODULE_AVAILABLE_juce_gui_extra=1'","'JUCE_MODULE_AVAILABLE_juce_gui_basics=1'","'JUCE_MODULE_AVAILABLE_juce_graphics=1'","'JUCE_MODULE_AVAILABLE_juce_events=1'","'JUCE_MODULE_AVAILABLE_juce_core=1'","'JUCE_MODULE_AVAILABLE_juce_data_structures=1'","'JUCE_MODULE_AVAILABLE_juce_audio_basics=1'","'JUCE_MODULE_AVAILABLE_juce_audio_utils=1'","'JUCE_MODULE_AVAILABLE_juce_audio_formats=1'","'JUCE_MODULE_AVAILABLE_juce_audio_devices=1'","'JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone'","'JucePlugin_Build_AU=1'","'JucePlugin_Build_AUv3=0'","'JucePlugin_Build_AAX=0'","'JucePlugin_Build_LV2=0'","'JucePlugin_Build_Standalone=0'","'JucePlugin_Build_Unity=0'","'JucePlugin_Build_VST=0'","'JucePlugin_Build_VST3=0'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = ("/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode",/Users/divijsingh/JUCE/modules,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lv2,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/serd,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord/src,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sratom,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src,/Users/divijsingh/JUCE/modules/juce_audio_plugin_client/AU,"$(inherited)");
+				INFOPLIST_FILE = "/Users/divijsingh/repos/gainmeter-plugin/build/CMakeFiles/GainMeter_AU.dir/Info.plist";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				LIBRARY_STYLE = Bundle;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' -fPIC -fvisibility=hidden -fvisibility-inlines-hidden ";
+				OTHER_LDFLAGS = (" -bundle -Wl,-headerpad_max_install_names","/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/RelWithDebInfo/libGainMeter_SharedCode.a","-Xlinker -framework -Xlinker WebKit","-weak_framework Metal","-weak_framework MetalKit","-Xlinker -framework -Xlinker DiscRecording","-Xlinker -framework -Xlinker QuartzCore","-Xlinker -framework -Xlinker CoreAudio","-Xlinker -framework -Xlinker CoreMIDI","-Xlinker -framework -Xlinker AudioToolbox","-Xlinker -framework -Xlinker Accelerate","-Xlinker -framework -Xlinker Cocoa","-Xlinker -framework -Xlinker Foundation","-Xlinker -framework -Xlinker IOKit","-Xlinker -framework -Xlinker Security","-Xlinker -framework -Xlinker AudioUnit","-Xlinker -framework -Xlinker CoreAudioKit","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Esoteryca.GainMeter;
+				PRODUCT_NAME = GainMeter;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGET_TEMP_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/build/GainMeter_AU.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+				WRAPPER_EXTENSION = component;
+			};
+			name = RelWithDebInfo;
+		};
+		9B352694995D485E91B63F8B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_ENTITLEMENTS = "/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_AU.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/MinSizeRel/AU";
+				ENABLE_HARDENED_RUNTIME = FALSE;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GainMeter_AU_EXPORTS,"'JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1'","'NDEBUG=1'","'_NDEBUG=1'","'JucePlugin_IsSynth=0'","'JucePlugin_ManufacturerCode=0x45544852'","'JucePlugin_Manufacturer=\"Esoteryca\"'","'JucePlugin_ManufacturerWebsite=\"\"'","'JucePlugin_ManufacturerEmail=\"\"'","'JucePlugin_PluginCode=0x476e4d74'","'JucePlugin_ProducesMidiOutput=0'","'JucePlugin_IsMidiEffect=0'","'JucePlugin_WantsMidiInput=0'","'JucePlugin_EditorRequiresKeyboardFocus=0'","'JucePlugin_Name=\"GainMeter\"'","'JucePlugin_Desc=\"GainMeter\"'","'JucePlugin_Version=0.1.0'","'JucePlugin_VersionString=\"0.1.0\"'","'JucePlugin_VersionCode=0x100'","'JucePlugin_VSTUniqueID=JucePlugin_PluginCode'","'JucePlugin_VSTCategory=kPlugCategEffect'","'JucePlugin_Vst3Category=\"Fx\"'","'JucePlugin_AUMainType='\\''aufx'\\'''","'JucePlugin_AUSubType=JucePlugin_PluginCode'","'JucePlugin_AUExportPrefix=GainMeterAU'","'JucePlugin_AUExportPrefixQuoted=\"GainMeterAU\"'","'JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode'","'JucePlugin_CFBundleIdentifier=com.Esoteryca.GainMeter'","'JucePlugin_AAXIdentifier=com.Esoteryca.GainMeter'","'JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode'","'JucePlugin_AAXProductId=JucePlugin_PluginCode'","'JucePlugin_AAXCategory=0'","'JucePlugin_AAXDisableBypass=0'","'JucePlugin_AAXDisableMultiMono=0'","'JucePlugin_VSTNumMidiInputs=16'","'JucePlugin_VSTNumMidiOutputs=16'","'JucePlugin_Enable_ARA=0'","'JucePlugin_ARAFactoryID=\"com.Esoteryca.GainMeter.arafactory.0.1.0\"'","'JucePlugin_ARADocumentArchiveID=\"com.Esoteryca.GainMeter.aradocumentarchive.1\"'","'JucePlugin_ARACompatibleArchiveIDs=\"\"'","'JucePlugin_ARAContentTypes=0'","'JucePlugin_ARATransformationFlags=0'","'JUCE_WEB_BROWSER=0'","'JUCE_USE_CURL=0'","'JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1'","'JUCE_MODULE_AVAILABLE_juce_audio_processors=1'","'JUCE_MODULE_AVAILABLE_juce_gui_extra=1'","'JUCE_MODULE_AVAILABLE_juce_gui_basics=1'","'JUCE_MODULE_AVAILABLE_juce_graphics=1'","'JUCE_MODULE_AVAILABLE_juce_events=1'","'JUCE_MODULE_AVAILABLE_juce_core=1'","'JUCE_MODULE_AVAILABLE_juce_data_structures=1'","'JUCE_MODULE_AVAILABLE_juce_audio_basics=1'","'JUCE_MODULE_AVAILABLE_juce_audio_utils=1'","'JUCE_MODULE_AVAILABLE_juce_audio_formats=1'","'JUCE_MODULE_AVAILABLE_juce_audio_devices=1'","'JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone'","'JucePlugin_Build_AU=1'","'JucePlugin_Build_AUv3=0'","'JucePlugin_Build_AAX=0'","'JucePlugin_Build_LV2=0'","'JucePlugin_Build_Standalone=0'","'JucePlugin_Build_Unity=0'","'JucePlugin_Build_VST=0'","'JucePlugin_Build_VST3=0'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = ("/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode",/Users/divijsingh/JUCE/modules,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lv2,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/serd,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord/src,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sratom,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src,/Users/divijsingh/JUCE/modules/juce_audio_plugin_client/AU,"$(inherited)");
+				INFOPLIST_FILE = "/Users/divijsingh/repos/gainmeter-plugin/build/CMakeFiles/GainMeter_AU.dir/Info.plist";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				LIBRARY_STYLE = Bundle;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' -fPIC -fvisibility=hidden -fvisibility-inlines-hidden ";
+				OTHER_LDFLAGS = (" -bundle -Wl,-headerpad_max_install_names","/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/MinSizeRel/libGainMeter_SharedCode.a","-Xlinker -framework -Xlinker WebKit","-weak_framework Metal","-weak_framework MetalKit","-Xlinker -framework -Xlinker DiscRecording","-Xlinker -framework -Xlinker QuartzCore","-Xlinker -framework -Xlinker CoreAudio","-Xlinker -framework -Xlinker CoreMIDI","-Xlinker -framework -Xlinker AudioToolbox","-Xlinker -framework -Xlinker Accelerate","-Xlinker -framework -Xlinker Cocoa","-Xlinker -framework -Xlinker Foundation","-Xlinker -framework -Xlinker IOKit","-Xlinker -framework -Xlinker Security","-Xlinker -framework -Xlinker AudioUnit","-Xlinker -framework -Xlinker CoreAudioKit","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Esoteryca.GainMeter;
+				PRODUCT_NAME = GainMeter;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGET_TEMP_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/build/GainMeter_AU.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+				WRAPPER_EXTENSION = component;
+			};
+			name = MinSizeRel;
+		};
+		A76BC8C61D38483799FF8B46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		AAFFA4E1E728485B9BF349E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		C03FDA10C86B42A0988C3121 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		C49C9660FB8E436394639023 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/divijsingh/repos/gainmeter-plugin/build/build";
+			};
+			name = RelWithDebInfo;
+		};
+		CDC2F97B01F74E92B9A2D3A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/Debug";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1'","'DEBUG=1'","'_DEBUG=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,/Users/divijsingh/JUCE/modules,"$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' -fobjc-arc        ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-Xlinker -framework -Xlinker Cocoa","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = juce_vst3_helper;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/build/juce_vst3_helper.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		CDC7B3F731964B2BB260E048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Release";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'JucePlugin_Build_AU=1'","'JucePlugin_Build_AUv3=0'","'JucePlugin_Build_AAX=0'","'JucePlugin_Build_LV2=0'","'JucePlugin_Build_Standalone=0'","'JucePlugin_Build_Unity=0'","'JucePlugin_Build_VST=0'","'JucePlugin_Build_VST3=1'","'JUCE_SHARED_CODE=1'","'JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone'","'JucePlugin_IsSynth=0'","'JucePlugin_ManufacturerCode=0x45544852'","'JucePlugin_Manufacturer=\"Esoteryca\"'","'JucePlugin_ManufacturerWebsite=\"\"'","'JucePlugin_ManufacturerEmail=\"\"'","'JucePlugin_PluginCode=0x476e4d74'","'JucePlugin_ProducesMidiOutput=0'","'JucePlugin_IsMidiEffect=0'","'JucePlugin_WantsMidiInput=0'","'JucePlugin_EditorRequiresKeyboardFocus=0'","'JucePlugin_Name=\"GainMeter\"'","'JucePlugin_Desc=\"GainMeter\"'","'JucePlugin_Version=0.1.0'","'JucePlugin_VersionString=\"0.1.0\"'","'JucePlugin_VersionCode=0x100'","'JucePlugin_VSTUniqueID=JucePlugin_PluginCode'","'JucePlugin_VSTCategory=kPlugCategEffect'","'JucePlugin_Vst3Category=\"Fx\"'","'JucePlugin_AUMainType='\\''aufx'\\'''","'JucePlugin_AUSubType=JucePlugin_PluginCode'","'JucePlugin_AUExportPrefix=GainMeterAU'","'JucePlugin_AUExportPrefixQuoted=\"GainMeterAU\"'","'JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode'","'JucePlugin_CFBundleIdentifier=com.Esoteryca.GainMeter'","'JucePlugin_AAXIdentifier=com.Esoteryca.GainMeter'","'JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode'","'JucePlugin_AAXProductId=JucePlugin_PluginCode'","'JucePlugin_AAXCategory=0'","'JucePlugin_AAXDisableBypass=0'","'JucePlugin_AAXDisableMultiMono=0'","'JucePlugin_VSTNumMidiInputs=16'","'JucePlugin_VSTNumMidiOutputs=16'","'JucePlugin_Enable_ARA=0'","'JucePlugin_ARAFactoryID=\"com.Esoteryca.GainMeter.arafactory.0.1.0\"'","'JucePlugin_ARADocumentArchiveID=\"com.Esoteryca.GainMeter.aradocumentarchive.1\"'","'JucePlugin_ARACompatibleArchiveIDs=\"\"'","'JucePlugin_ARAContentTypes=0'","'JucePlugin_ARATransformationFlags=0'","'JUCE_WEB_BROWSER=0'","'JUCE_USE_CURL=0'","'JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1'","'JUCE_MODULE_AVAILABLE_juce_audio_processors=1'","'JUCE_MODULE_AVAILABLE_juce_gui_extra=1'","'JUCE_MODULE_AVAILABLE_juce_gui_basics=1'","'JUCE_MODULE_AVAILABLE_juce_graphics=1'","'JUCE_MODULE_AVAILABLE_juce_events=1'","'JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1'","'NDEBUG=1'","'_NDEBUG=1'","'JUCE_MODULE_AVAILABLE_juce_core=1'","'JUCE_MODULE_AVAILABLE_juce_data_structures=1'","'JUCE_MODULE_AVAILABLE_juce_audio_basics=1'","'JUCE_MODULE_AVAILABLE_juce_audio_utils=1'","'JUCE_MODULE_AVAILABLE_juce_audio_formats=1'","'JUCE_MODULE_AVAILABLE_juce_audio_devices=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode",/Users/divijsingh/JUCE/modules,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lv2,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/serd,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord/src,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sratom,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("    -DNDEBUG -fPIC -fvisibility=hidden ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' -fPIC -fvisibility=hidden -fvisibility-inlines-hidden ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = GainMeter_SharedCode;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/build/GainMeter.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		D4BB86361225471695F1EEF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		D97F097691D54931A7932CB9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		D9B5F32A9FE34C54AD60828D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/MinSizeRel";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1'","'NDEBUG=1'","'_NDEBUG=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,/Users/divijsingh/JUCE/modules,"$(inherited)");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' -fobjc-arc ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-Xlinker -framework -Xlinker Cocoa","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = juce_vst3_helper;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/build/juce_vst3_helper.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		DCFFCCDBFF3B4DEFBD1C9AD1 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		F595D1D4963148829634A7BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		F597BF3062FC43BBAFAF76F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_ENTITLEMENTS = "/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_AU.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Release/AU";
+				ENABLE_HARDENED_RUNTIME = FALSE;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GainMeter_AU_EXPORTS,"'JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1'","'NDEBUG=1'","'_NDEBUG=1'","'JucePlugin_IsSynth=0'","'JucePlugin_ManufacturerCode=0x45544852'","'JucePlugin_Manufacturer=\"Esoteryca\"'","'JucePlugin_ManufacturerWebsite=\"\"'","'JucePlugin_ManufacturerEmail=\"\"'","'JucePlugin_PluginCode=0x476e4d74'","'JucePlugin_ProducesMidiOutput=0'","'JucePlugin_IsMidiEffect=0'","'JucePlugin_WantsMidiInput=0'","'JucePlugin_EditorRequiresKeyboardFocus=0'","'JucePlugin_Name=\"GainMeter\"'","'JucePlugin_Desc=\"GainMeter\"'","'JucePlugin_Version=0.1.0'","'JucePlugin_VersionString=\"0.1.0\"'","'JucePlugin_VersionCode=0x100'","'JucePlugin_VSTUniqueID=JucePlugin_PluginCode'","'JucePlugin_VSTCategory=kPlugCategEffect'","'JucePlugin_Vst3Category=\"Fx\"'","'JucePlugin_AUMainType='\\''aufx'\\'''","'JucePlugin_AUSubType=JucePlugin_PluginCode'","'JucePlugin_AUExportPrefix=GainMeterAU'","'JucePlugin_AUExportPrefixQuoted=\"GainMeterAU\"'","'JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode'","'JucePlugin_CFBundleIdentifier=com.Esoteryca.GainMeter'","'JucePlugin_AAXIdentifier=com.Esoteryca.GainMeter'","'JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode'","'JucePlugin_AAXProductId=JucePlugin_PluginCode'","'JucePlugin_AAXCategory=0'","'JucePlugin_AAXDisableBypass=0'","'JucePlugin_AAXDisableMultiMono=0'","'JucePlugin_VSTNumMidiInputs=16'","'JucePlugin_VSTNumMidiOutputs=16'","'JucePlugin_Enable_ARA=0'","'JucePlugin_ARAFactoryID=\"com.Esoteryca.GainMeter.arafactory.0.1.0\"'","'JucePlugin_ARADocumentArchiveID=\"com.Esoteryca.GainMeter.aradocumentarchive.1\"'","'JucePlugin_ARACompatibleArchiveIDs=\"\"'","'JucePlugin_ARAContentTypes=0'","'JucePlugin_ARATransformationFlags=0'","'JUCE_WEB_BROWSER=0'","'JUCE_USE_CURL=0'","'JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1'","'JUCE_MODULE_AVAILABLE_juce_audio_processors=1'","'JUCE_MODULE_AVAILABLE_juce_gui_extra=1'","'JUCE_MODULE_AVAILABLE_juce_gui_basics=1'","'JUCE_MODULE_AVAILABLE_juce_graphics=1'","'JUCE_MODULE_AVAILABLE_juce_events=1'","'JUCE_MODULE_AVAILABLE_juce_core=1'","'JUCE_MODULE_AVAILABLE_juce_data_structures=1'","'JUCE_MODULE_AVAILABLE_juce_audio_basics=1'","'JUCE_MODULE_AVAILABLE_juce_audio_utils=1'","'JUCE_MODULE_AVAILABLE_juce_audio_formats=1'","'JUCE_MODULE_AVAILABLE_juce_audio_devices=1'","'JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone'","'JucePlugin_Build_AU=1'","'JucePlugin_Build_AUv3=0'","'JucePlugin_Build_AAX=0'","'JucePlugin_Build_LV2=0'","'JucePlugin_Build_Standalone=0'","'JucePlugin_Build_Unity=0'","'JucePlugin_Build_VST=0'","'JucePlugin_Build_VST3=0'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = ("/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode",/Users/divijsingh/JUCE/modules,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lv2,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/serd,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord/src,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sratom,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src,/Users/divijsingh/JUCE/modules/juce_audio_plugin_client/AU,"$(inherited)");
+				INFOPLIST_FILE = "/Users/divijsingh/repos/gainmeter-plugin/build/CMakeFiles/GainMeter_AU.dir/Info.plist";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				LIBRARY_STYLE = Bundle;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' -fPIC -fvisibility=hidden -fvisibility-inlines-hidden ";
+				OTHER_LDFLAGS = (" -bundle -Wl,-headerpad_max_install_names","/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/Release/libGainMeter_SharedCode.a","-Xlinker -framework -Xlinker WebKit","-weak_framework Metal","-weak_framework MetalKit","-Xlinker -framework -Xlinker DiscRecording","-Xlinker -framework -Xlinker QuartzCore","-Xlinker -framework -Xlinker CoreAudio","-Xlinker -framework -Xlinker CoreMIDI","-Xlinker -framework -Xlinker AudioToolbox","-Xlinker -framework -Xlinker Accelerate","-Xlinker -framework -Xlinker Cocoa","-Xlinker -framework -Xlinker Foundation","-Xlinker -framework -Xlinker IOKit","-Xlinker -framework -Xlinker Security","-Xlinker -framework -Xlinker AudioUnit","-Xlinker -framework -Xlinker CoreAudioKit","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Esoteryca.GainMeter;
+				PRODUCT_NAME = GainMeter;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGET_TEMP_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/build/GainMeter_AU.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+				WRAPPER_EXTENSION = component;
+			};
+			name = Release;
+		};
+		FEFF9AD0C4DB4C9FB113FA82 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CODE_SIGN_ENTITLEMENTS = "/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode/GainMeter_VST3.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/MinSizeRel/VST3";
+				ENABLE_HARDENED_RUNTIME = FALSE;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GainMeter_VST3_EXPORTS,"'JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1'","'NDEBUG=1'","'_NDEBUG=1'","'JucePlugin_IsSynth=0'","'JucePlugin_ManufacturerCode=0x45544852'","'JucePlugin_Manufacturer=\"Esoteryca\"'","'JucePlugin_ManufacturerWebsite=\"\"'","'JucePlugin_ManufacturerEmail=\"\"'","'JucePlugin_PluginCode=0x476e4d74'","'JucePlugin_ProducesMidiOutput=0'","'JucePlugin_IsMidiEffect=0'","'JucePlugin_WantsMidiInput=0'","'JucePlugin_EditorRequiresKeyboardFocus=0'","'JucePlugin_Name=\"GainMeter\"'","'JucePlugin_Desc=\"GainMeter\"'","'JucePlugin_Version=0.1.0'","'JucePlugin_VersionString=\"0.1.0\"'","'JucePlugin_VersionCode=0x100'","'JucePlugin_VSTUniqueID=JucePlugin_PluginCode'","'JucePlugin_VSTCategory=kPlugCategEffect'","'JucePlugin_Vst3Category=\"Fx\"'","'JucePlugin_AUMainType='\\''aufx'\\'''","'JucePlugin_AUSubType=JucePlugin_PluginCode'","'JucePlugin_AUExportPrefix=GainMeterAU'","'JucePlugin_AUExportPrefixQuoted=\"GainMeterAU\"'","'JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode'","'JucePlugin_CFBundleIdentifier=com.Esoteryca.GainMeter'","'JucePlugin_AAXIdentifier=com.Esoteryca.GainMeter'","'JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode'","'JucePlugin_AAXProductId=JucePlugin_PluginCode'","'JucePlugin_AAXCategory=0'","'JucePlugin_AAXDisableBypass=0'","'JucePlugin_AAXDisableMultiMono=0'","'JucePlugin_VSTNumMidiInputs=16'","'JucePlugin_VSTNumMidiOutputs=16'","'JucePlugin_Enable_ARA=0'","'JucePlugin_ARAFactoryID=\"com.Esoteryca.GainMeter.arafactory.0.1.0\"'","'JucePlugin_ARADocumentArchiveID=\"com.Esoteryca.GainMeter.aradocumentarchive.1\"'","'JucePlugin_ARACompatibleArchiveIDs=\"\"'","'JucePlugin_ARAContentTypes=0'","'JucePlugin_ARATransformationFlags=0'","'JUCE_WEB_BROWSER=0'","'JUCE_USE_CURL=0'","'JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1'","'JUCE_MODULE_AVAILABLE_juce_audio_processors=1'","'JUCE_MODULE_AVAILABLE_juce_gui_extra=1'","'JUCE_MODULE_AVAILABLE_juce_gui_basics=1'","'JUCE_MODULE_AVAILABLE_juce_graphics=1'","'JUCE_MODULE_AVAILABLE_juce_events=1'","'JUCE_MODULE_AVAILABLE_juce_core=1'","'JUCE_MODULE_AVAILABLE_juce_data_structures=1'","'JUCE_MODULE_AVAILABLE_juce_audio_basics=1'","'JUCE_MODULE_AVAILABLE_juce_audio_utils=1'","'JUCE_MODULE_AVAILABLE_juce_audio_formats=1'","'JUCE_MODULE_AVAILABLE_juce_audio_devices=1'","'JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone'","'JucePlugin_Build_AU=0'","'JucePlugin_Build_AUv3=0'","'JucePlugin_Build_AAX=0'","'JucePlugin_Build_LV2=0'","'JucePlugin_Build_Standalone=0'","'JucePlugin_Build_Unity=0'","'JucePlugin_Build_VST=0'","'JucePlugin_Build_VST3=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = ("/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/JuceLibraryCode",/Users/divijsingh/JUCE/modules,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lv2,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/serd,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord/src,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sratom,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv,/Users/divijsingh/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src,"$(inherited)");
+				INFOPLIST_FILE = "/Users/divijsingh/repos/gainmeter-plugin/build/CMakeFiles/GainMeter_VST3.dir/Info.plist";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				LIBRARY_STYLE = Bundle;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' -fPIC -fvisibility=hidden -fvisibility-inlines-hidden ";
+				OTHER_LDFLAGS = (" -bundle -Wl,-headerpad_max_install_names","/Users/divijsingh/repos/gainmeter-plugin/build/GainMeter_artefacts/MinSizeRel/libGainMeter_SharedCode.a","-Xlinker -framework -Xlinker WebKit","-weak_framework Metal","-weak_framework MetalKit","-Xlinker -framework -Xlinker CoreAudioKit","-Xlinker -framework -Xlinker DiscRecording","-Xlinker -framework -Xlinker QuartzCore","-Xlinker -framework -Xlinker CoreAudio","-Xlinker -framework -Xlinker CoreMIDI","-Xlinker -framework -Xlinker AudioToolbox","-Xlinker -framework -Xlinker Accelerate","-Xlinker -framework -Xlinker Cocoa","-Xlinker -framework -Xlinker Foundation","-Xlinker -framework -Xlinker IOKit","-Xlinker -framework -Xlinker Security","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Esoteryca.GainMeter;
+				PRODUCT_NAME = GainMeter;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGET_TEMP_DIR = "/Users/divijsingh/repos/gainmeter-plugin/build/build/GainMeter_VST3.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+				WRAPPER_EXTENSION = vst3;
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13233C50E3404E209D94F512 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAFFA4E1E728485B9BF349E8 /* Debug */,
+				C03FDA10C86B42A0988C3121 /* Release */,
+				674C9FE8197846F4963D90F6 /* MinSizeRel */,
+				59C2CF600B3A4339BAAD81DA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		492A1811B32A40BC9C7C316B /* Build configuration list for PBXNativeTarget "GainMeter_VST3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DBD0C87215A407C8D7A9C35 /* Debug */,
+				15F82231793F49A395A3E993 /* Release */,
+				FEFF9AD0C4DB4C9FB113FA82 /* MinSizeRel */,
+				3B006C6D168C40B6B059611E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5DEC25B14C244952A2A72312 /* Build configuration list for PBXNativeTarget "GainMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36CBE0A1EF0B4494BD0F8DE5 /* Debug */,
+				CDC7B3F731964B2BB260E048 /* Release */,
+				3D2DC9A92B72432189F68A1C /* MinSizeRel */,
+				0B9DDB89630B4685B5C85DD2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5F45C11EA3F84121B0F07DC6 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89C7895E8C814F9E8C69D1D0 /* Debug */,
+				A76BC8C61D38483799FF8B46 /* Release */,
+				535C8753A9E644DB8887FF4D /* MinSizeRel */,
+				D97F097691D54931A7932CB9 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		948464E7BB51470DAE394710 /* Build configuration list for PBXAggregateTarget "GainMeter_All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D469950ED3040D184D2F1F2 /* Debug */,
+				6CBA41A21F04468DB14C9433 /* Release */,
+				657177A7C1234CCCA3DEBF98 /* MinSizeRel */,
+				11A565D9E0A34FA3915640CE /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B8E2CDF2B2714958AD14AD85 /* Build configuration list for PBXNativeTarget "juce_vst3_helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDC2F97B01F74E92B9A2D3A7 /* Debug */,
+				1C79CE26B9754D0385A20B8A /* Release */,
+				D9B5F32A9FE34C54AD60828D /* MinSizeRel */,
+				50619BC0183840758D2DCD11 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CF603C4EB3AA46D0A6AEF455 /* Build configuration list for PBXProject "GainMeterPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71EC92F910344C69B2ADBACB /* Debug */,
+				1A3A345B325D4F4CA4BBB7AE /* Release */,
+				04677C05F6934B248E825121 /* MinSizeRel */,
+				C49C9660FB8E436394639023 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EF606C5F401640B2A783A690 /* Build configuration list for PBXNativeTarget "GainMeter_AU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AB0239F90EE45FBB96718B6 /* Debug */,
+				F597BF3062FC43BBAFAF76F0 /* Release */,
+				9B352694995D485E91B63F8B /* MinSizeRel */,
+				99CF7663F4254958B7DAD576 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FD62A3A9A7E54152BE56953D /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F595D1D4963148829634A7BD /* Debug */,
+				D4BB86361225471695F1EEF8 /* Release */,
+				DCFFCCDBFF3B4DEFBD1C9AD1 /* MinSizeRel */,
+				8AC5AB4BF4B54B159F8A17D7 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 858033B8C4124D158137BB9B /* Project object */;
+}

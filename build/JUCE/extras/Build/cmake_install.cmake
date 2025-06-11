@@ -37,10 +37,10 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump")
 endif()
 
-set(CMAKE_BINARY_DIR "/Users/divijsingh/repos/ethyr-gainmeter-plugin/build")
+set(CMAKE_BINARY_DIR "/Users/divijsingh/repos/gainmeter-plugin/build")
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE/extras/Build/juceaide/cmake_install.cmake")
+  include("/Users/divijsingh/repos/gainmeter-plugin/build/JUCE/extras/Build/juceaide/cmake_install.cmake")
 endif()
 

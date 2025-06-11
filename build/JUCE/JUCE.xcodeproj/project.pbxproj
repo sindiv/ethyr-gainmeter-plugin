@@ -7,35 +7,35 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		6F1FC1D1F90641C0A5DE6567 /* ALL_BUILD */ = {
+		89F1A3D462274B6E80B8BDC9 /* install */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 98CC0DE0647A4F7D826C775A /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
-			buildPhases = (
-				58292D0908A2D9C97C5B3AF7 /* Generate CMakeFiles/ALL_BUILD */,
-			);
-			dependencies = (
-				37A6DCF9E0644FDD83B2C069 /* PBXTargetDependency */,
-			);
-			name = ALL_BUILD;
-			productName = ALL_BUILD;
-		};
-		ECD64FE24FFD41AB9D2ABAF7 /* install */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 986DEB1F7C104933B36BF152 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildConfigurationList = 4CE5A02E87734950AF6AF2A1 /* Build configuration list for PBXAggregateTarget "install" */;
 			buildPhases = (
 				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
 			);
 			dependencies = (
-				5D7B2C29059A4135A86DCC0D /* PBXTargetDependency */,
+				AEA34C663E244190ADB1EE95 /* PBXTargetDependency */,
 			);
 			name = install;
 			productName = install;
 		};
-		EEA84ED4311F4AF4A892BD09 /* ZERO_CHECK */ = {
+		9F72839D953B4C52885E408E /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = C3CDA14160A2404AB5C28480 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = 09023A13E8D144539A278DA2 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
-				927DF0DA6251DB0296675FFF /* Generate CMakeFiles/ZERO_CHECK */,
+				4887FF8D79F777E3324E0C0D /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				FF2A99B6F58342E6B213593B /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		CCC55876826746B8AABCCE1B /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 86FD57C9AE354A5CAAC1F7AE /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				F2418A0053FDC53CA6E7BB4A /* Generate CMakeFiles/ZERO_CHECK */,
 			);
 			dependencies = (
 			);
@@ -45,124 +45,124 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildStyle section */
-		248A6C6A8B7A41BCBBE76D72 /* MinSizeRel */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = MinSizeRel;
-		};
-		54F018C0E8984928AF3C1403 /* RelWithDebInfo */ = {
+		10D1EC7E24864BD1BC38656B /* RelWithDebInfo */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = RelWithDebInfo;
 		};
-		91786202FE9F49C6838985E3 /* Release */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Release;
-		};
-		B382F8A8EE6843E68197F741 /* Debug */ = {
+		45191C274B1A42BABF6D5274 /* Debug */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = Debug;
 		};
+		B157230C14DB474C91EB1FF1 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		CBC24C4CB6044D979EDA5DF3 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		0B12CD32425B4D3E88B0131F /* PBXContainerItemProxy */ = {
+		26A53C143CD748869DA620AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1286944943FE48549C22EBAC /* Project object */;
+			containerPortal = 5873576DF578469DB66396B0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EEA84ED4311F4AF4A892BD09;
+			remoteGlobalIDString = CCC55876826746B8AABCCE1B;
 			remoteInfo = ZERO_CHECK;
 		};
-		A1AD1D301A43439AAD252D8B /* PBXContainerItemProxy */ = {
+		4342E2E76E4E40B681514D32 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1286944943FE48549C22EBAC /* Project object */;
+			containerPortal = 5873576DF578469DB66396B0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6F1FC1D1F90641C0A5DE6567;
+			remoteGlobalIDString = 9F72839D953B4C52885E408E;
 			remoteInfo = ALL_BUILD;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F717CB3B9902416C8C45D087 /* /Users/divijsingh/JUCE/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		61176EAACACC4120BFEC94CF /* /Users/divijsingh/JUCE/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		24142E1490EB4424AD1BCD28 = {
-			isa = PBXGroup;
-			children = (
-				CAF3D3F39AF0478B90E70CB5 /* ALL_BUILD */,
-				E6866C123D2843CA94D87A98 /* Products */,
-				53D78B193FDC4287888E64FE /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		53D78B193FDC4287888E64FE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		8BC883ABAAE04D42A4760310 /* CMake Rules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		CAF3D3F39AF0478B90E70CB5 /* ALL_BUILD */ = {
-			isa = PBXGroup;
-			children = (
-				8BC883ABAAE04D42A4760310 /* CMake Rules */,
-				F717CB3B9902416C8C45D087 /* /Users/divijsingh/JUCE/CMakeLists.txt */,
-			);
-			name = ALL_BUILD;
-			sourceTree = "<group>";
-		};
-		E6866C123D2843CA94D87A98 /* Products */ = {
+		7A24EFD6D42F435CBC846571 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+		82D194C27C3A4C2398DD75F2 = {
+			isa = PBXGroup;
+			children = (
+				FEF70B1C07F3494AB4A89B20 /* ALL_BUILD */,
+				7A24EFD6D42F435CBC846571 /* Products */,
+				C6A77480514F470B90D19CE4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9B7AC967C8E84C44B504B2FB /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		C6A77480514F470B90D19CE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEF70B1C07F3494AB4A89B20 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				9B7AC967C8E84C44B504B2FB /* CMake Rules */,
+				61176EAACACC4120BFEC94CF /* /Users/divijsingh/JUCE/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXProject section */
-		1286944943FE48549C22EBAC /* Project object */ = {
+		5873576DF578469DB66396B0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1520;
 			};
-			buildConfigurationList = C91CDDCDF9674D45B36DBBC7 /* Build configuration list for PBXProject "JUCE" */;
+			buildConfigurationList = 54507C8E8B944401A4EF76C9 /* Build configuration list for PBXProject "JUCE" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				B382F8A8EE6843E68197F741 /* Debug */,
-				91786202FE9F49C6838985E3 /* Release */,
-				248A6C6A8B7A41BCBBE76D72 /* MinSizeRel */,
-				54F018C0E8984928AF3C1403 /* RelWithDebInfo */,
+				45191C274B1A42BABF6D5274 /* Debug */,
+				B157230C14DB474C91EB1FF1 /* Release */,
+				CBC24C4CB6044D979EDA5DF3 /* MinSizeRel */,
+				10D1EC7E24864BD1BC38656B /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = 24142E1490EB4424AD1BCD28;
+			mainGroup = 82D194C27C3A4C2398DD75F2;
 			projectDirPath = /Users/divijsingh/JUCE;
 			projectRoot = "";
 			targets = (
-				6F1FC1D1F90641C0A5DE6567 /* ALL_BUILD */,
-				EEA84ED4311F4AF4A892BD09 /* ZERO_CHECK */,
-				ECD64FE24FFD41AB9D2ABAF7 /* install */,
+				9F72839D953B4C52885E408E /* ALL_BUILD */,
+				CCC55876826746B8AABCCE1B /* ZERO_CHECK */,
+				89F1A3D462274B6E80B8BDC9 /* install */,
 			);
 		};
 /* End PBXProject section */
@@ -183,7 +183,7 @@
 exit 0";
 			showEnvVarsInLog = 0;
 		};
-		58292D0908A2D9C97C5B3AF7 /* Generate CMakeFiles/ALL_BUILD */ = {
+		4887FF8D79F777E3324E0C0D /* Generate CMakeFiles/ALL_BUILD */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -193,24 +193,24 @@ exit 0";
 			);
 			name = "Generate CMakeFiles/ALL_BUILD";
 			outputPaths = (
-"/Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE/CMakeFiles/ALL_BUILD"			);
+"/Users/divijsingh/repos/gainmeter-plugin/build/JUCE/CMakeFiles/ALL_BUILD"			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e
 if test \"$CONFIGURATION\" = \"Debug\"; then :
-  cd /Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE
+  cd /Users/divijsingh/repos/gainmeter-plugin/build/JUCE
   echo Build\\ all\\ projects
 fi
 if test \"$CONFIGURATION\" = \"Release\"; then :
-  cd /Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE
+  cd /Users/divijsingh/repos/gainmeter-plugin/build/JUCE
   echo Build\\ all\\ projects
 fi
 if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
-  cd /Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE
+  cd /Users/divijsingh/repos/gainmeter-plugin/build/JUCE
   echo Build\\ all\\ projects
 fi
 if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
-  cd /Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE
+  cd /Users/divijsingh/repos/gainmeter-plugin/build/JUCE
   echo Build\\ all\\ projects
 fi
 ";
@@ -231,39 +231,6 @@ fi
 exit 0";
 			showEnvVarsInLog = 0;
 		};
-		927DF0DA6251DB0296675FFF /* Generate CMakeFiles/ZERO_CHECK */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Generate CMakeFiles/ZERO_CHECK";
-			outputPaths = (
-"/Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE/CMakeFiles/ZERO_CHECK"			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e
-if test \"$CONFIGURATION\" = \"Debug\"; then :
-  cd /Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE
-  make -f /Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE/CMakeScripts/ReRunCMake.make
-fi
-if test \"$CONFIGURATION\" = \"Release\"; then :
-  cd /Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE
-  make -f /Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE/CMakeScripts/ReRunCMake.make
-fi
-if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
-  cd /Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE
-  make -f /Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE/CMakeScripts/ReRunCMake.make
-fi
-if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
-  cd /Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE
-  make -f /Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE/CMakeScripts/ReRunCMake.make
-fi
-";
-			showEnvVarsInLog = 0;
-		};
 		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -277,19 +244,19 @@ fi
 			shellPath = /bin/sh;
 			shellScript = "set -e
 if test \"$CONFIGURATION\" = \"Debug\"; then :
-  cd /Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE
+  cd /Users/divijsingh/repos/gainmeter-plugin/build/JUCE
   /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
 fi
 if test \"$CONFIGURATION\" = \"Release\"; then :
-  cd /Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE
+  cd /Users/divijsingh/repos/gainmeter-plugin/build/JUCE
   /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
 fi
 if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
-  cd /Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE
+  cd /Users/divijsingh/repos/gainmeter-plugin/build/JUCE
   /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
 fi
 if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
-  cd /Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE
+  cd /Users/divijsingh/repos/gainmeter-plugin/build/JUCE
   /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
 fi
 ";
@@ -310,23 +277,87 @@ fi
 exit 0";
 			showEnvVarsInLog = 0;
 		};
+		F2418A0053FDC53CA6E7BB4A /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/divijsingh/repos/gainmeter-plugin/build/JUCE/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build/JUCE
+  make -f /Users/divijsingh/repos/gainmeter-plugin/build/JUCE/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build/JUCE
+  make -f /Users/divijsingh/repos/gainmeter-plugin/build/JUCE/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build/JUCE
+  make -f /Users/divijsingh/repos/gainmeter-plugin/build/JUCE/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/divijsingh/repos/gainmeter-plugin/build/JUCE
+  make -f /Users/divijsingh/repos/gainmeter-plugin/build/JUCE/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		37A6DCF9E0644FDD83B2C069 /* PBXTargetDependency */ = {
+		AEA34C663E244190ADB1EE95 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EEA84ED4311F4AF4A892BD09 /* ZERO_CHECK */;
-			targetProxy = 0B12CD32425B4D3E88B0131F /* PBXContainerItemProxy */;
+			target = 9F72839D953B4C52885E408E /* ALL_BUILD */;
+			targetProxy = 4342E2E76E4E40B681514D32 /* PBXContainerItemProxy */;
 		};
-		5D7B2C29059A4135A86DCC0D /* PBXTargetDependency */ = {
+		FF2A99B6F58342E6B213593B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6F1FC1D1F90641C0A5DE6567 /* ALL_BUILD */;
-			targetProxy = A1AD1D301A43439AAD252D8B /* PBXContainerItemProxy */;
+			target = CCC55876826746B8AABCCE1B /* ZERO_CHECK */;
+			targetProxy = 26A53C143CD748869DA620AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		05AA94115DCD47F6AC131A19 /* MinSizeRel */ = {
+		0AB923556A9E47689D69DC1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		12B693A119C4469EA9AEED9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk;
+				SYMROOT = "/Users/divijsingh/repos/gainmeter-plugin/build/build";
+			};
+			name = Debug;
+		};
+		275DE38C02A04E44B08261A9 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
@@ -334,11 +365,31 @@ exit 0";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = "/Users/divijsingh/repos/ethyr-gainmeter-plugin/build/build";
+				SYMROOT = "/Users/divijsingh/repos/gainmeter-plugin/build/build";
 			};
-			name = MinSizeRel;
+			name = RelWithDebInfo;
 		};
-		17DCC358B47D4B5CB51D752E /* RelWithDebInfo */ = {
+		3047B735EDA3456CBB2977E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		373C7C21FF704DEC8697180D /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -358,7 +409,7 @@ exit 0";
 			};
 			name = RelWithDebInfo;
 		};
-		1EBAC0F15F4847D892858D75 /* MinSizeRel */ = {
+		3AAC71FE3E554812B38B6FB2 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -371,34 +422,14 @@ exit 0";
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = ("","$(inherited)");
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = install;
+				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = MinSizeRel;
+			name = RelWithDebInfo;
 		};
-		2C231BE5AA12406998C14A91 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = install;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		2F8BDC98C8524658A263C6D3 /* RelWithDebInfo */ = {
+		5A0DC3480AB34735825C6F58 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
@@ -406,31 +437,11 @@ exit 0";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = "/Users/divijsingh/repos/ethyr-gainmeter-plugin/build/build";
+				SYMROOT = "/Users/divijsingh/repos/gainmeter-plugin/build/build";
 			};
-			name = RelWithDebInfo;
+			name = Release;
 		};
-		30E58A4BAF0847689C2B4FF6 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		319C4F525F2C4F2EAC61AF65 /* Release */ = {
+		5DA2CE484D334C6CA35FBD2F /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -448,9 +459,9 @@ exit 0";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = Release;
+			name = MinSizeRel;
 		};
-		3C4F7CF969CA4F8C882A2E6B /* Debug */ = {
+		7AFAEE02BA4A452796869AB7 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -463,25 +474,26 @@ exit 0";
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = ("","$(inherited)");
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
+				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = Debug;
+			name = RelWithDebInfo;
 		};
-		531FF22727CA421CB2803FB2 /* Debug */ = {
+		A447647E502249F3A42947DE /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				MACOSX_DEPLOYMENT_TARGET = 13.6;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk;
-				SYMROOT = "/Users/divijsingh/repos/ethyr-gainmeter-plugin/build/build";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/divijsingh/repos/gainmeter-plugin/build/build";
 			};
-			name = Debug;
+			name = MinSizeRel;
 		};
-		6115C79250954E08828DB99F /* MinSizeRel */ = {
+		ACCC24C824E14DD4A89DE9EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -499,9 +511,29 @@ exit 0";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = MinSizeRel;
+			name = Debug;
 		};
-		63847A6A03F849F3A96852BF /* Release */ = {
+		B66D7448315243FDAD206677 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		BB4B330A301147DBB91E94EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -519,9 +551,9 @@ exit 0";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = Release;
+			name = Debug;
 		};
-		7D510EBDA48A4B6D8D10222D /* RelWithDebInfo */ = {
+		BC020D48FAFA452CA53ED8C2 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -534,14 +566,14 @@ exit 0";
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = ("","$(inherited)");
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
+				PRODUCT_NAME = install;
 				SECTORDER_FLAGS = "";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = RelWithDebInfo;
+			name = MinSizeRel;
 		};
-		CEE99DE61BEE4E6BB5F7007E /* Release */ = {
+		CECAB10FFB4A46D0B6F4058F /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -559,108 +591,76 @@ exit 0";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = Release;
-		};
-		D72F73102F7045A8A7B2ADFF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				MACOSX_DEPLOYMENT_TARGET = 13.6;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = "/Users/divijsingh/repos/ethyr-gainmeter-plugin/build/build";
-			};
-			name = Release;
-		};
-		E4D92AEFA43B45D1933AFC2C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		F1ABAFAE03BB4E8E8C5C99A2 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
 			name = MinSizeRel;
+		};
+		E0608ABC620C44FE9352E93A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		986DEB1F7C104933B36BF152 /* Build configuration list for PBXAggregateTarget "install" */ = {
+		09023A13E8D144539A278DA2 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C231BE5AA12406998C14A91 /* Debug */,
-				63847A6A03F849F3A96852BF /* Release */,
-				1EBAC0F15F4847D892858D75 /* MinSizeRel */,
-				17DCC358B47D4B5CB51D752E /* RelWithDebInfo */,
+				B66D7448315243FDAD206677 /* Debug */,
+				E0608ABC620C44FE9352E93A /* Release */,
+				5DA2CE484D334C6CA35FBD2F /* MinSizeRel */,
+				7AFAEE02BA4A452796869AB7 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		98CC0DE0647A4F7D826C775A /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		4CE5A02E87734950AF6AF2A1 /* Build configuration list for PBXAggregateTarget "install" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E4D92AEFA43B45D1933AFC2C /* Debug */,
-				319C4F525F2C4F2EAC61AF65 /* Release */,
-				F1ABAFAE03BB4E8E8C5C99A2 /* MinSizeRel */,
-				7D510EBDA48A4B6D8D10222D /* RelWithDebInfo */,
+				BB4B330A301147DBB91E94EE /* Debug */,
+				3047B735EDA3456CBB2977E6 /* Release */,
+				BC020D48FAFA452CA53ED8C2 /* MinSizeRel */,
+				373C7C21FF704DEC8697180D /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		C3CDA14160A2404AB5C28480 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		54507C8E8B944401A4EF76C9 /* Build configuration list for PBXProject "JUCE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3C4F7CF969CA4F8C882A2E6B /* Debug */,
-				CEE99DE61BEE4E6BB5F7007E /* Release */,
-				6115C79250954E08828DB99F /* MinSizeRel */,
-				30E58A4BAF0847689C2B4FF6 /* RelWithDebInfo */,
+				12B693A119C4469EA9AEED9C /* Debug */,
+				5A0DC3480AB34735825C6F58 /* Release */,
+				A447647E502249F3A42947DE /* MinSizeRel */,
+				275DE38C02A04E44B08261A9 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		C91CDDCDF9674D45B36DBBC7 /* Build configuration list for PBXProject "JUCE" */ = {
+		86FD57C9AE354A5CAAC1F7AE /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				531FF22727CA421CB2803FB2 /* Debug */,
-				D72F73102F7045A8A7B2ADFF /* Release */,
-				05AA94115DCD47F6AC131A19 /* MinSizeRel */,
-				2F8BDC98C8524658A263C6D3 /* RelWithDebInfo */,
+				ACCC24C824E14DD4A89DE9EA /* Debug */,
+				0AB923556A9E47689D69DC1E /* Release */,
+				CECAB10FFB4A46D0B6F4058F /* MinSizeRel */,
+				3AAC71FE3E554812B38B6FB2 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1286944943FE48549C22EBAC /* Project object */;
+	rootObject = 5873576DF578469DB66396B0 /* Project object */;
 }

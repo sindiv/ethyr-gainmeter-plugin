@@ -37,22 +37,22 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump")
 endif()
 
-set(CMAKE_BINARY_DIR "/Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE/tools")
+set(CMAKE_BINARY_DIR "/Users/divijsingh/repos/gainmeter-plugin/build/JUCE/tools")
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE/tools/modules/cmake_install.cmake")
+  include("/Users/divijsingh/repos/gainmeter-plugin/build/JUCE/tools/modules/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE/tools/extras/Build/cmake_install.cmake")
+  include("/Users/divijsingh/repos/gainmeter-plugin/build/JUCE/tools/extras/Build/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/JUCE-8.0.8" TYPE FILE FILES
-    "/Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE/tools/JUCEConfigVersion.cmake"
-    "/Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE/tools/JUCEConfig.cmake"
+    "/Users/divijsingh/repos/gainmeter-plugin/build/JUCE/tools/JUCEConfigVersion.cmake"
+    "/Users/divijsingh/repos/gainmeter-plugin/build/JUCE/tools/JUCEConfig.cmake"
     "/Users/divijsingh/JUCE/extras/Build/CMake/JUCECheckAtomic.cmake"
     "/Users/divijsingh/JUCE/extras/Build/CMake/JUCEHelperTargets.cmake"
     "/Users/divijsingh/JUCE/extras/Build/CMake/JUCEModuleSupport.cmake"
@@ -80,5 +80,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE/tools/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/divijsingh/repos/gainmeter-plugin/build/JUCE/tools/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

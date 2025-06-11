@@ -113,19 +113,19 @@ TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/divijsingh/JUCE/extra
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/divijsingh/JUCE/extras/Build/CMakeLists.txt))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/divijsingh/JUCE/extras/Build/juceaide/CMakeLists.txt))
 TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/divijsingh/JUCE/modules/CMakeLists.txt))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE/tools/CMakeFiles/3.27.9/CMakeCCompiler.cmake))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE/tools/CMakeFiles/3.27.9/CMakeCXXCompiler.cmake))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE/tools/CMakeFiles/3.27.9/CMakeSystem.cmake))
-TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE/tools/CMakeFiles/cmake.verify_globs))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/divijsingh/repos/gainmeter-plugin/build/JUCE/tools/CMakeFiles/3.27.9/CMakeCCompiler.cmake))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/divijsingh/repos/gainmeter-plugin/build/JUCE/tools/CMakeFiles/3.27.9/CMakeCXXCompiler.cmake))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/divijsingh/repos/gainmeter-plugin/build/JUCE/tools/CMakeFiles/3.27.9/CMakeSystem.cmake))
+TARGETS += $(subst $(space),$(spaceplus),$(wildcard /Users/divijsingh/repos/gainmeter-plugin/build/JUCE/tools/CMakeFiles/cmake.verify_globs))
 
 .NOTPARALLEL:
 
 .PHONY: all VERIFY_GLOBS
 
-all: VERIFY_GLOBS /Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE/tools/CMakeFiles/cmake.check_cache
+all: VERIFY_GLOBS /Users/divijsingh/repos/gainmeter-plugin/build/JUCE/tools/CMakeFiles/cmake.check_cache
 
 VERIFY_GLOBS:
-	/Applications/CMake.app/Contents/bin/cmake -P /Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE/tools/CMakeFiles/VerifyGlobs.cmake
+	/Applications/CMake.app/Contents/bin/cmake -P /Users/divijsingh/repos/gainmeter-plugin/build/JUCE/tools/CMakeFiles/VerifyGlobs.cmake
 
-/Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE/tools/CMakeFiles/cmake.check_cache: $(TARGETS)
-	/Applications/CMake.app/Contents/bin/cmake -S/Users/divijsingh/JUCE -B/Users/divijsingh/repos/ethyr-gainmeter-plugin/build/JUCE/tools
+/Users/divijsingh/repos/gainmeter-plugin/build/JUCE/tools/CMakeFiles/cmake.check_cache: $(TARGETS)
+	/Applications/CMake.app/Contents/bin/cmake -S/Users/divijsingh/JUCE -B/Users/divijsingh/repos/gainmeter-plugin/build/JUCE/tools
