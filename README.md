@@ -39,7 +39,7 @@ A simple gain control plugin with a real-time peak meter, built using modern C++
 ### Build
 
 ```bash
-git clone https://github.com/your-username/ethyr-gainmeter-plugin.git
+git clone git@github.com:sindiv/gainmeter-plugin.git
 cd ethyr-gainmeter-plugin
 cmake -Bbuild -GXcode  # or -G"Visual Studio 17 2022"
 cmake --build build --config Release
