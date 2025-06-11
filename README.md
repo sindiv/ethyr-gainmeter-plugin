@@ -1,4 +1,4 @@
-# 🎛️ Ethyr GainMeter Plugin
+# 🎛️ GainMeter Plugin
 
 A simple gain control plugin with a real-time peak meter, built using modern C++ and JUCE. 
 

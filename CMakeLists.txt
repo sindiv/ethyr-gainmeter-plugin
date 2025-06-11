@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
 
-project(EthyrGainMeterPlugin VERSION 0.1.0)
+project(GainMeterPlugin VERSION 0.1.0)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -10,8 +10,8 @@ set(JUCE_DIR "/Users/divijsingh/JUCE")
 # Add JUCE
 add_subdirectory(${JUCE_DIR} JUCE)
 
-juce_add_plugin(EthyrGainMeter
-    COMPANY_NAME "Ethyr Audio"
+juce_add_plugin(GainMeter
+    COMPANY_NAME "Esoteryca"
     IS_SYNTH FALSE
     NEEDS_MIDI_INPUT FALSE
     NEEDS_MIDI_OUTPUT FALSE
@@ -21,21 +21,21 @@ juce_add_plugin(EthyrGainMeter
     PLUGIN_MANUFACTURER_CODE ETHR
     PLUGIN_CODE GnMt
     FORMATS VST3 AU
-    PRODUCT_NAME "Ethyr GainMeter"
+    PRODUCT_NAME "GainMeter"
 )
 
-target_sources(EthyrGainMeter PRIVATE
+target_sources(GainMeter PRIVATE
     Source/PluginProcessor.cpp
     Source/PluginProcessor.h
     Source/PluginEditor.cpp
     Source/PluginEditor.h
 )
 
-target_compile_definitions(EthyrGainMeter PRIVATE
+target_compile_definitions(GainMeter PRIVATE
     JUCE_WEB_BROWSER=0
     JUCE_USE_CURL=0
 )
 
-target_link_libraries(EthyrGainMeter PRIVATE
+target_link_libraries(GainMeter PRIVATE
     juce::juce_audio_utils
 )
