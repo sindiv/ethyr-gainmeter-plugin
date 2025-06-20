@@ -1,0 +1,17 @@
+# Build artifacts
+build/
+*.vst3
+*.component
+*.a
+*.dylib
+*.so
+*.dll
+
+# IDE files
+.DS_Store
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# Temporary files
+*.tmp
+*.log
