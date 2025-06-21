@@ -1,39 +1,39 @@
-# 🎛️ GainMeter Plugin
+# GainMeter Plugin
 
 A simple gain control plugin with a real-time peak meter, built using modern C++ and JUCE. 
 
-**Work in Progress:** This project is actively being developed as part of my audio developer portfolio. Core architecture is complete — feature development and polish are ongoing.
+**Work in Progress:** This project is actively being developed. Core architecture is complete — feature development and polish are ongoing.
 
-## 🧠 Project Goals
+## Project Goals
 
 - Real-time gain adjustment (linear or dB scale)
 - Peak meter visualization (per channel)
 - Exported as a VST3 and AU plugin
 - Built using modern C++ (C++17 or C++20)
 - CMake-based JUCE project
-- Well-documented and cleanly structured
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 
 - C++
 - JUCE Framework
 - CMake
+- Xcode
 - Git / GitHub
 
-## 🧪 Features
+## Features
 
 - Adjustable gain via slider
 - Real-time peak meter display
 - Clean UI using JUCE Components
 - Modular code using modern OOP patterns
 
-## 🔧 Build Instructions
+## Build Instructions
 
 ### Prerequisites
 
 - JUCE 7.x installed
 - CMake (3.15+)
-- A plugin host (e.g., Reaper, Ableton, Logic)
+- DAW / plugin host
 - IDE (Xcode, Visual Studio, or CLion)
 
 ### Build
